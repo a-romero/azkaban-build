@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.executor.QueuedExecutionsTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:20" hostname="mars" time="0.095">
+  <properties/>
+  <testcase name="testEnqueueHappyCase" classname="azkaban.executor.QueuedExecutionsTest" time="0.002"/>
+  <testcase name="testEnqueueAll" classname="azkaban.executor.QueuedExecutionsTest" time="0.002"/>
+  <testcase name="testGetReferences" classname="azkaban.executor.QueuedExecutionsTest" time="0.028"/>
+  <testcase name="testClear" classname="azkaban.executor.QueuedExecutionsTest" time="0.002"/>
+  <testcase name="testSize" classname="azkaban.executor.QueuedExecutionsTest" time="0.007"/>
+  <testcase name="testHasExecution" classname="azkaban.executor.QueuedExecutionsTest" time="0.008"/>
+  <testcase name="testFetchHead" classname="azkaban.executor.QueuedExecutionsTest" time="0.012"/>
+  <testcase name="testGetFlow" classname="azkaban.executor.QueuedExecutionsTest" time="0.002"/>
+  <testcase name="testEnqueueDuplicateExecution" classname="azkaban.executor.QueuedExecutionsTest" time="0.001"/>
+  <testcase name="testDequeue" classname="azkaban.executor.QueuedExecutionsTest" time="0.021"/>
+  <testcase name="testEnqueueOverflow" classname="azkaban.executor.QueuedExecutionsTest" time="0.002"/>
+  <testcase name="testIsFull" classname="azkaban.executor.QueuedExecutionsTest" time="0.003"/>
+  <testcase name="testIsEmpty" classname="azkaban.executor.QueuedExecutionsTest" time="0.002"/>
+  <system-out><![CDATA[2017/06/07 21:31:20.624 +0100 INFO [ExecutorManager] Cleaning old logs from execution_logs
+2017/06/07 21:31:20.624 +0100 INFO [ExecutorManager] Cleaning old log files before 2017-03-15T20:31:20.624Z
+2017/06/07 21:31:20.635 +0100 INFO [ExecutorManager] Cleaned up 0 log entries.
+2017/06/07 21:31:20.636 +0100 INFO [ExecutorManager] log clean up time: 0 seconds.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

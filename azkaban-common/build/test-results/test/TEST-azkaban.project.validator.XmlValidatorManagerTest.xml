@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.project.validator.XmlValidatorManagerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:22" hostname="mars" time="0.029">
+  <properties/>
+  <testcase name="testNoValidatorsDir" classname="azkaban.project.validator.XmlValidatorManagerTest" time="0.002"/>
+  <testcase name="testValidatorDoesNotExist" classname="azkaban.project.validator.XmlValidatorManagerTest" time="0.02"/>
+  <testcase name="testDefaultValidator" classname="azkaban.project.validator.XmlValidatorManagerTest" time="0.001"/>
+  <testcase name="testLoadValidators" classname="azkaban.project.validator.XmlValidatorManagerTest" time="0.006"/>
+  <system-out><![CDATA[2017/06/07 21:31:22.197 +0100 WARN [XmlValidatorManager] Validator directory validators does not exist or is not a directory.
+5057 [Test worker] WARN azkaban.project.validator.XmlValidatorManager  - Validator directory validators does not exist or is not a directory.
+2017/06/07 21:31:22.198 +0100 WARN [XmlValidatorManager] Azkaban properties file does not contain the key project.validators.xml.file
+5058 [Test worker] WARN azkaban.project.validator.XmlValidatorManager  - Azkaban properties file does not contain the key project.validators.xml.file
+2017/06/07 21:31:22.211 +0100 INFO [XmlValidatorManager] Resource test.jar is updated. Reload the classloader.
+5071 [Test worker] INFO azkaban.project.validator.XmlValidatorManager  - Resource test.jar is updated. Reload the classloader.
+2017/06/07 21:31:22.217 +0100 ERROR [XmlValidatorManager] Could not instantiate ProjectValidator do.not.exist.validator
+5077 [Test worker] ERROR azkaban.project.validator.XmlValidatorManager  - Could not instantiate ProjectValidator do.not.exist.validator
+2017/06/07 21:31:22.218 +0100 ERROR [XmlValidatorManager] Cannot load all the validators.
+5078 [Test worker] ERROR azkaban.project.validator.XmlValidatorManager  - Cannot load all the validators.
+2017/06/07 21:31:22.219 +0100 WARN [XmlValidatorManager] Azkaban properties file does not contain the key project.validators.xml.file
+5079 [Test worker] WARN azkaban.project.validator.XmlValidatorManager  - Azkaban properties file does not contain the key project.validators.xml.file
+2017/06/07 21:31:22.224 +0100 INFO [XmlValidatorManager] Added validator azkaban.project.validator.TestValidator to list of validators.
+5084 [Test worker] INFO azkaban.project.validator.XmlValidatorManager  - Added validator azkaban.project.validator.TestValidator to list of validators.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

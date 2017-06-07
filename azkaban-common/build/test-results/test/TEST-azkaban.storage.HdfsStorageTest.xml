@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.storage.HdfsStorageTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:22" hostname="mars" time="0.183">
+  <properties/>
+  <testcase name="testGet" classname="azkaban.storage.HdfsStorageTest" time="0.153"/>
+  <testcase name="testPut" classname="azkaban.storage.HdfsStorageTest" time="0.02"/>
+  <system-out><![CDATA[2017/06/07 21:31:22.649 +0100 INFO [HdfsStorage] Creating project artifact: meta: StorageMetadata{projectId='1', version='2'} path: /path/to/foo/1/1-c5e616ceb09bc787e52eb99bab8d2a8c.zip
+5509 [Test worker] INFO azkaban.storage.HdfsStorage  - Creating project artifact: meta: StorageMetadata{projectId='1', version='2'} path: /path/to/foo/1/1-c5e616ceb09bc787e52eb99bab8d2a8c.zip
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

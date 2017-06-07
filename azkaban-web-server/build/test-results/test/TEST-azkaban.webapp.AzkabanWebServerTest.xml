@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.webapp.AzkabanWebServerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:39" hostname="mars" time="1.583">
+  <properties/>
+  <testcase name="testInjection" classname="azkaban.webapp.AzkabanWebServerTest" time="1.583"/>
+  <system-out><![CDATA[2017/06/07 21:31:38.500 +0100 INFO [AzkabanDatabaseUpdater] Use scripting directory /opt/azkaban/azkaban-db/src/main/sql
+2017/06/07 21:31:38.500 +0100 INFO [AzkabanDatabaseUpdater] Will auto update any changes.
+2017/06/07 21:31:38.513 +0100 INFO [DataSourceUtils] h2 DB path: /opt/azkaban/azkaban-web-server/./h2
+2017/06/07 21:31:38.602 +0100 INFO [AzkabanDatabaseSetup] Searching for installed tables
+2017/06/07 21:31:39.541 +0100 INFO [AzkabanDatabaseSetup] Searching for table versions in the properties table
+2017/06/07 21:31:39.541 +0100 INFO [AzkabanDatabaseSetup] Properties table doesn't exist.
+2017/06/07 21:31:39.548 +0100 INFO [AzkabanDatabaseUpdater] Need to update the db.
+2017/06/07 21:31:39.548 +0100 INFO [AzkabanDatabaseSetup] No installed tables found.
+2017/06/07 21:31:39.548 +0100 INFO [AzkabanDatabaseSetup] The following are missing tables that need to be installed
+2017/06/07 21:31:39.548 +0100 INFO [AzkabanDatabaseSetup]  execution_logs
+2017/06/07 21:31:39.549 +0100 INFO [AzkabanDatabaseSetup]  projects
+2017/06/07 21:31:39.549 +0100 INFO [AzkabanDatabaseSetup]  project_files
+2017/06/07 21:31:39.549 +0100 INFO [AzkabanDatabaseSetup]  executor_events
+2017/06/07 21:31:39.549 +0100 INFO [AzkabanDatabaseSetup]  execution_jobs
+2017/06/07 21:31:39.549 +0100 INFO [AzkabanDatabaseSetup]  project_flows
+2017/06/07 21:31:39.550 +0100 INFO [AzkabanDatabaseSetup]  triggers
+2017/06/07 21:31:39.550 +0100 INFO [AzkabanDatabaseSetup]  project_versions
+2017/06/07 21:31:39.550 +0100 INFO [AzkabanDatabaseSetup]  project_events
+2017/06/07 21:31:39.550 +0100 INFO [AzkabanDatabaseSetup]  active_sla
+2017/06/07 21:31:39.550 +0100 INFO [AzkabanDatabaseSetup]  active_executing_flows
+2017/06/07 21:31:39.550 +0100 INFO [AzkabanDatabaseSetup]  execution_flows
+2017/06/07 21:31:39.551 +0100 INFO [AzkabanDatabaseSetup]  executors
+2017/06/07 21:31:39.551 +0100 INFO [AzkabanDatabaseSetup]  project_permissions
+2017/06/07 21:31:39.551 +0100 INFO [AzkabanDatabaseSetup]  properties
+2017/06/07 21:31:39.551 +0100 INFO [AzkabanDatabaseSetup]  project_properties
+2017/06/07 21:31:39.551 +0100 INFO [AzkabanDatabaseSetup] No tables need to be updated.
+2017/06/07 21:31:39.551 +0100 INFO [AzkabanDatabaseUpdater] Updating DB
+2017/06/07 21:31:39.552 +0100 INFO [AzkabanDatabaseSetup] Creating new table properties version 3.10.1
+2017/06/07 21:31:39.570 +0100 INFO [AzkabanDatabaseSetup] Creating new table execution_logs version 3.10.1
+2017/06/07 21:31:39.577 +0100 INFO [AzkabanDatabaseSetup] Creating new table projects version 3.10.1
+2017/06/07 21:31:39.593 +0100 INFO [AzkabanDatabaseSetup] Creating new table project_files version 3.10.1
+2017/06/07 21:31:39.597 +0100 INFO [AzkabanDatabaseSetup] Creating new table executor_events version 3.10.1
+2017/06/07 21:31:39.603 +0100 INFO [AzkabanDatabaseSetup] Creating new table execution_jobs version 3.10.1
+2017/06/07 21:31:39.610 +0100 INFO [AzkabanDatabaseSetup] Creating new table project_flows version 3.10.1
+2017/06/07 21:31:39.619 +0100 INFO [AzkabanDatabaseSetup] Creating new table triggers version 3.10.1
+2017/06/07 21:31:39.624 +0100 INFO [AzkabanDatabaseSetup] Creating new table project_versions version 3.10.1
+2017/06/07 21:31:39.636 +0100 INFO [AzkabanDatabaseSetup] Creating new table project_events version 3.10.1
+2017/06/07 21:31:39.639 +0100 INFO [AzkabanDatabaseSetup] Creating new table active_sla version 3.10.1
+2017/06/07 21:31:39.642 +0100 INFO [AzkabanDatabaseSetup] Creating new table active_executing_flows version 3.10.1
+2017/06/07 21:31:39.644 +0100 INFO [AzkabanDatabaseSetup] Creating new table execution_flows version 3.10.1
+2017/06/07 21:31:39.672 +0100 INFO [AzkabanDatabaseSetup] Creating new table executors version 3.10.1
+2017/06/07 21:31:39.680 +0100 INFO [AzkabanDatabaseSetup] Creating new table project_permissions version 3.10.1
+2017/06/07 21:31:39.688 +0100 INFO [AzkabanDatabaseSetup] Creating new table project_properties version 3.10.1
+2017/06/07 21:31:40.409 +0100 INFO [DataSourceUtils] h2 DB path: /opt/azkaban/azkaban-web-server/./h2
+2017/06/07 21:31:40.490 +0100 INFO [WebServerProvider] Setting up connector with stats on: true
+2017/06/07 21:31:40.515 +0100 INFO [log] Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2017/06/07 21:31:40.516 +0100 INFO [WebServerProvider] Starting server on port: 0
+2017/06/07 21:31:40.910 +0100 INFO [XmlUserManager] Loading user azkaban
+2017/06/07 21:31:40.911 +0100 INFO [XmlUserManager] Loading user metrics
+2017/06/07 21:31:40.946 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:41.012 +0100 INFO [ExecutorManager] QueueProcessorThread active turned true
+2017/06/07 21:31:41.028 +0100 INFO [ExecutorManager] Cleaning old logs from execution_logs
+2017/06/07 21:31:41.037 +0100 INFO [DataSourceUtils] h2 DB path: /opt/azkaban/azkaban-web-server/./h2
+2017/06/07 21:31:41.039 +0100 INFO [ProjectManager] Project version retention is set to 3
+2017/06/07 21:31:41.041 +0100 WARN [XmlValidatorManager] Validator directory validators does not exist or is not a directory.
+2017/06/07 21:31:41.044 +0100 WARN [XmlValidatorManager] Azkaban properties file does not contain the key project.validators.xml.file
+2017/06/07 21:31:41.045 +0100 INFO [ExecutorManager] Cleaning old log files before 2017-03-15T20:31:41.028Z
+2017/06/07 21:31:41.058 +0100 INFO [ExecutorManager] Cleaned up 0 log entries.
+2017/06/07 21:31:41.058 +0100 INFO [ExecutorManager] log clean up time: 0 seconds.
+2017/06/07 21:31:41.074 +0100 INFO [AzkabanCommonModule] h2 DB path: /opt/azkaban/azkaban-web-server/./h2
+2017/06/07 21:31:41.152 +0100 INFO [TriggerManager] TriggerManager loaded.
+2017/06/07 21:31:41.152 +0100 INFO [AzkabanWebServer] Loading built-in checker and action types
+2017/06/07 21:31:41.157 +0100 INFO [CheckerTypeLoader] Registering checker BasicTimeChecker
+2017/06/07 21:31:41.158 +0100 INFO [CheckerTypeLoader] Registering checker SlaChecker
+2017/06/07 21:31:41.158 +0100 INFO [CheckerTypeLoader] Registering checker ExecutionChecker
+2017/06/07 21:31:41.158 +0100 INFO [ActionTypeLoader] Registering action ExecuteFlowAction
+2017/06/07 21:31:41.159 +0100 INFO [ActionTypeLoader] Registering action KillExecutionAction
+2017/06/07 21:31:41.159 +0100 INFO [ActionTypeLoader] Registering action AlertAction
+2017/06/07 21:31:41.160 +0100 INFO [ActionTypeLoader] Registering action CreateTriggerAction
+2017/06/07 21:31:41.160 +0100 INFO [AzkabanWebServer] Loading trigger based scheduler
+2017/06/07 21:31:41.162 +0100 INFO [AzkabanWebServer] Loading plug-in checker and action types
+2017/06/07 21:31:41.162 +0100 ERROR [AzkabanWebServer] plugin path plugins/triggers doesn't exist!
+2017/06/07 21:31:41.163 +0100 INFO [AzkabanWebServer] Registering MBeans...
+2017/06/07 21:31:41.198 +0100 INFO [AzkabanWebServer] Bean azkaban.jmx.JmxJettyServer registered.
+2017/06/07 21:31:41.201 +0100 INFO [AzkabanWebServer] Bean azkaban.jmx.JmxTriggerManager registered.
+2017/06/07 21:31:41.215 +0100 INFO [AzkabanWebServer] Bean azkaban.jmx.JmxExecutorManager registered.
+2017/06/07 21:31:41.275 +0100 INFO [AzkabanWebServer] Bean org.apache.log4j.jmx.HierarchyDynamicMBean registered.
+******** loginLoggerObjName: log4j:logger=azkaban.webapp.servlet.LoginAbstractAzkabanServlet
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

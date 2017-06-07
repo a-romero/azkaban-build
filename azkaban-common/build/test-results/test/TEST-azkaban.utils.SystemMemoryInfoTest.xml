@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.utils.SystemMemoryInfoTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:22" hostname="mars" time="0.015">
+  <properties/>
+  <testcase name="notGrantedIfFreeMemoryAvailableLessThanMinimal" classname="azkaban.utils.SystemMemoryInfoTest" time="0.012"/>
+  <testcase name="grantedIfFreeMemoryCheckReturnsZero" classname="azkaban.utils.SystemMemoryInfoTest" time="0.0"/>
+  <testcase name="grantedIfFreeMemoryAvailable" classname="azkaban.utils.SystemMemoryInfoTest" time="0.0"/>
+  <system-out><![CDATA[2017/06/07 21:31:22.890 +0100 INFO [SystemMemoryInfo] Free memory amount minus Xmx (4194304 - 2097152 kb) is less than low mem threshold (3145728 kb),  memory request declined.
+5750 [Test worker] INFO azkaban.utils.SystemMemoryInfo  - Free memory amount minus Xmx (4194304 - 2097152 kb) is less than low mem threshold (3145728 kb),  memory request declined.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

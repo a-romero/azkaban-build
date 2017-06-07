@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.jobExecutor.ProcessJobTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:27" hostname="mars" time="0.255">
+  <properties/>
+  <testcase name="testOneUnixCommandWithNoUser" classname="azkaban.jobExecutor.ProcessJobTest" time="0.003"/>
+  <testcase name="testOneUnixCommand" classname="azkaban.jobExecutor.ProcessJobTest" time="0.068"/>
+  <testcase name="testFailedUnixCommand" classname="azkaban.jobExecutor.ProcessJobTest" time="0.02"/>
+  <testcase name="testMultipleUnixCommands" classname="azkaban.jobExecutor.ProcessJobTest" time="0.115"/>
+  <testcase name="testOneUnixCommandWithProxyUserInsteadOfSubmitUser" classname="azkaban.jobExecutor.ProcessJobTest" time="0.048"/>
+  <testcase name="testPartitionCommand" classname="azkaban.jobExecutor.ProcessJobTest" time="0.001"/>
+  <system-out><![CDATA[2017/06/07 21:31:27.145 +0100 INFO [ProcessJob] Memory granted for job TestProcess
+10005 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Memory granted for job TestProcess
+2017/06/07 21:31:27.145 +0100 INFO [ProcessJob] 1 commands to execute.
+10005 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - 1 commands to execute.
+2017/06/07 21:31:27.148 +0100 INFO [ProcessJob] Memory granted for job TestProcess
+10008 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Memory granted for job TestProcess
+2017/06/07 21:31:27.148 +0100 INFO [ProcessJob] 1 commands to execute.
+10008 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - 1 commands to execute.
+2017/06/07 21:31:27.149 +0100 INFO [ProcessJob] effective user is: test_user
+10009 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - effective user is: test_user
+2017/06/07 21:31:27.149 +0100 INFO [ProcessJob] Command: ls -al
+10009 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Command: ls -al
+2017/06/07 21:31:27.149 +0100 INFO [ProcessJob] Environment variables: {JOB_OUTPUT_PROP_FILE=/tmp/junit2682118907916776976/TestProcess/TestProcess_output_2566587890626076574_tmp, JOB_PROP_FILE=/tmp/junit2682118907916776976/TestProcess/TestProcess_props_4703639404361100557_tmp, KRB5CCNAME=/tmp/krb5cc__test_project__test_flow__test_job__123__test_user, JOB_NAME=TestProcess}
+10009 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Environment variables: {JOB_OUTPUT_PROP_FILE=/tmp/junit2682118907916776976/TestProcess/TestProcess_output_2566587890626076574_tmp, JOB_PROP_FILE=/tmp/junit2682118907916776976/TestProcess/TestProcess_props_4703639404361100557_tmp, KRB5CCNAME=/tmp/krb5cc__test_project__test_flow__test_job__123__test_user, JOB_NAME=TestProcess}
+2017/06/07 21:31:27.149 +0100 INFO [ProcessJob] Working directory: /tmp/junit2682118907916776976/TestProcess
+10009 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Working directory: /tmp/junit2682118907916776976/TestProcess
+2017/06/07 21:31:27.178 +0100 INFO [ProcessJob] total 4
+10038 [Thread-46] INFO azkaban.jobExecutor.ProcessJob  - total 4
+2017/06/07 21:31:27.192 +0100 INFO [ProcessJob] drwxr-xr-x. 2 root root  80 Jun  7 21:31 .
+10052 [Thread-46] INFO azkaban.jobExecutor.ProcessJob  - drwxr-xr-x. 2 root root  80 Jun  7 21:31 .
+2017/06/07 21:31:27.192 +0100 INFO [ProcessJob] drwxr-xr-x. 3 root root  60 Jun  7 21:31 ..
+10052 [Thread-46] INFO azkaban.jobExecutor.ProcessJob  - drwxr-xr-x. 3 root root  60 Jun  7 21:31 ..
+2017/06/07 21:31:27.192 +0100 INFO [ProcessJob] -rw-r--r--. 1 root root   0 Jun  7 21:31 TestProcess_output_2566587890626076574_tmp
+10052 [Thread-46] INFO azkaban.jobExecutor.ProcessJob  - -rw-r--r--. 1 root root   0 Jun  7 21:31 TestProcess_output_2566587890626076574_tmp
+2017/06/07 21:31:27.192 +0100 INFO [ProcessJob] -rw-r--r--. 1 root root 295 Jun  7 21:31 TestProcess_props_4703639404361100557_tmp
+10052 [Thread-46] INFO azkaban.jobExecutor.ProcessJob  - -rw-r--r--. 1 root root 295 Jun  7 21:31 TestProcess_props_4703639404361100557_tmp
+2017/06/07 21:31:27.213 +0100 INFO [ProcessJob] Process completed successfully in 0 seconds.
+10073 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Process completed successfully in 0 seconds.
+2017/06/07 21:31:27.216 +0100 INFO [ProcessJob] Memory granted for job TestProcess
+10076 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Memory granted for job TestProcess
+2017/06/07 21:31:27.216 +0100 INFO [ProcessJob] 1 commands to execute.
+10076 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - 1 commands to execute.
+2017/06/07 21:31:27.216 +0100 INFO [ProcessJob] effective user is: test_user
+10076 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - effective user is: test_user
+2017/06/07 21:31:27.216 +0100 INFO [ProcessJob] Command: xls -al
+10076 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Command: xls -al
+2017/06/07 21:31:27.217 +0100 INFO [ProcessJob] Environment variables: {JOB_OUTPUT_PROP_FILE=/tmp/junit4487097559478809823/TestProcess/TestProcess_output_6653980702432115930_tmp, JOB_PROP_FILE=/tmp/junit4487097559478809823/TestProcess/TestProcess_props_1733926116518626355_tmp, KRB5CCNAME=/tmp/krb5cc__test_project__test_flow__test_job__123__test_user, JOB_NAME=TestProcess}
+10077 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Environment variables: {JOB_OUTPUT_PROP_FILE=/tmp/junit4487097559478809823/TestProcess/TestProcess_output_6653980702432115930_tmp, JOB_PROP_FILE=/tmp/junit4487097559478809823/TestProcess/TestProcess_props_1733926116518626355_tmp, KRB5CCNAME=/tmp/krb5cc__test_project__test_flow__test_job__123__test_user, JOB_NAME=TestProcess}
+2017/06/07 21:31:27.217 +0100 INFO [ProcessJob] Working directory: /tmp/junit4487097559478809823/TestProcess
+10077 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Working directory: /tmp/junit4487097559478809823/TestProcess
+2017/06/07 21:31:27.232 +0100 INFO [ProcessJob] Process completed unsuccessfully in 0 seconds.
+10092 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Process completed unsuccessfully in 0 seconds.
+2017/06/07 21:31:27.235 +0100 INFO [ProcessJob] Memory granted for job TestProcess
+10095 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Memory granted for job TestProcess
+2017/06/07 21:31:27.236 +0100 INFO [ProcessJob] 3 commands to execute.
+10096 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - 3 commands to execute.
+2017/06/07 21:31:27.238 +0100 INFO [ProcessJob] effective user is: test_user
+10098 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - effective user is: test_user
+2017/06/07 21:31:27.239 +0100 INFO [ProcessJob] Command: pwd
+10099 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Command: pwd
+2017/06/07 21:31:27.239 +0100 INFO [ProcessJob] Environment variables: {JOB_OUTPUT_PROP_FILE=/tmp/junit6276728940256782014/TestProcess/TestProcess_output_7308052401737520853_tmp, JOB_PROP_FILE=/tmp/junit6276728940256782014/TestProcess/TestProcess_props_7062890283843448530_tmp, KRB5CCNAME=/tmp/krb5cc__test_project__test_flow__test_job__123__test_user, JOB_NAME=TestProcess}
+10099 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Environment variables: {JOB_OUTPUT_PROP_FILE=/tmp/junit6276728940256782014/TestProcess/TestProcess_output_7308052401737520853_tmp, JOB_PROP_FILE=/tmp/junit6276728940256782014/TestProcess/TestProcess_props_7062890283843448530_tmp, KRB5CCNAME=/tmp/krb5cc__test_project__test_flow__test_job__123__test_user, JOB_NAME=TestProcess}
+2017/06/07 21:31:27.239 +0100 INFO [ProcessJob] Working directory: /tmp/junit6276728940256782014/TestProcess
+10099 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Working directory: /tmp/junit6276728940256782014/TestProcess
+2017/06/07 21:31:27.273 +0100 INFO [ProcessJob] /tmp/junit6276728940256782014/TestProcess
+10133 [Thread-48] INFO azkaban.jobExecutor.ProcessJob  - /tmp/junit6276728940256782014/TestProcess
+2017/06/07 21:31:27.274 +0100 INFO [ProcessJob] Process completed successfully in 0 seconds.
+10134 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Process completed successfully in 0 seconds.
+2017/06/07 21:31:27.274 +0100 INFO [ProcessJob] Command: date
+10134 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Command: date
+2017/06/07 21:31:27.274 +0100 INFO [ProcessJob] Environment variables: {JOB_OUTPUT_PROP_FILE=/tmp/junit6276728940256782014/TestProcess/TestProcess_output_7308052401737520853_tmp, JOB_PROP_FILE=/tmp/junit6276728940256782014/TestProcess/TestProcess_props_7062890283843448530_tmp, KRB5CCNAME=/tmp/krb5cc__test_project__test_flow__test_job__123__test_user, JOB_NAME=TestProcess}
+10134 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Environment variables: {JOB_OUTPUT_PROP_FILE=/tmp/junit6276728940256782014/TestProcess/TestProcess_output_7308052401737520853_tmp, JOB_PROP_FILE=/tmp/junit6276728940256782014/TestProcess/TestProcess_props_7062890283843448530_tmp, KRB5CCNAME=/tmp/krb5cc__test_project__test_flow__test_job__123__test_user, JOB_NAME=TestProcess}
+2017/06/07 21:31:27.274 +0100 INFO [ProcessJob] Working directory: /tmp/junit6276728940256782014/TestProcess
+10134 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Working directory: /tmp/junit6276728940256782014/TestProcess
+2017/06/07 21:31:27.318 +0100 INFO [ProcessJob] Wed  7 Jun 21:31:27 BST 2017
+10178 [Thread-50] INFO azkaban.jobExecutor.ProcessJob  - Wed  7 Jun 21:31:27 BST 2017
+2017/06/07 21:31:27.321 +0100 INFO [ProcessJob] Process completed successfully in 0 seconds.
+10181 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Process completed successfully in 0 seconds.
+2017/06/07 21:31:27.321 +0100 INFO [ProcessJob] Command: whoami
+10181 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Command: whoami
+2017/06/07 21:31:27.322 +0100 INFO [ProcessJob] Environment variables: {JOB_OUTPUT_PROP_FILE=/tmp/junit6276728940256782014/TestProcess/TestProcess_output_7308052401737520853_tmp, JOB_PROP_FILE=/tmp/junit6276728940256782014/TestProcess/TestProcess_props_7062890283843448530_tmp, KRB5CCNAME=/tmp/krb5cc__test_project__test_flow__test_job__123__test_user, JOB_NAME=TestProcess}
+10182 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Environment variables: {JOB_OUTPUT_PROP_FILE=/tmp/junit6276728940256782014/TestProcess/TestProcess_output_7308052401737520853_tmp, JOB_PROP_FILE=/tmp/junit6276728940256782014/TestProcess/TestProcess_props_7062890283843448530_tmp, KRB5CCNAME=/tmp/krb5cc__test_project__test_flow__test_job__123__test_user, JOB_NAME=TestProcess}
+2017/06/07 21:31:27.322 +0100 INFO [ProcessJob] Working directory: /tmp/junit6276728940256782014/TestProcess
+10182 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Working directory: /tmp/junit6276728940256782014/TestProcess
+2017/06/07 21:31:27.329 +0100 INFO [ProcessJob] root
+10189 [Thread-52] INFO azkaban.jobExecutor.ProcessJob  - root
+2017/06/07 21:31:27.348 +0100 INFO [ProcessJob] Process completed successfully in 0 seconds.
+10208 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Process completed successfully in 0 seconds.
+2017/06/07 21:31:27.350 +0100 INFO [ProcessJob] Memory granted for job TestProcess
+10210 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Memory granted for job TestProcess
+2017/06/07 21:31:27.350 +0100 INFO [ProcessJob] 1 commands to execute.
+10210 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - 1 commands to execute.
+2017/06/07 21:31:27.351 +0100 INFO [ProcessJob] effective user is: test_user
+10211 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - effective user is: test_user
+2017/06/07 21:31:27.351 +0100 INFO [ProcessJob] Command: ls -al
+10211 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Command: ls -al
+2017/06/07 21:31:27.351 +0100 INFO [ProcessJob] Environment variables: {JOB_OUTPUT_PROP_FILE=/tmp/junit1649277247199818970/TestProcess/TestProcess_output_330145908621169828_tmp, JOB_PROP_FILE=/tmp/junit1649277247199818970/TestProcess/TestProcess_props_168350322547844222_tmp, KRB5CCNAME=/tmp/krb5cc__test_project__test_flow__test_job__123__test_user, JOB_NAME=TestProcess}
+10211 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Environment variables: {JOB_OUTPUT_PROP_FILE=/tmp/junit1649277247199818970/TestProcess/TestProcess_output_330145908621169828_tmp, JOB_PROP_FILE=/tmp/junit1649277247199818970/TestProcess/TestProcess_props_168350322547844222_tmp, KRB5CCNAME=/tmp/krb5cc__test_project__test_flow__test_job__123__test_user, JOB_NAME=TestProcess}
+2017/06/07 21:31:27.352 +0100 INFO [ProcessJob] Working directory: /tmp/junit1649277247199818970/TestProcess
+10212 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Working directory: /tmp/junit1649277247199818970/TestProcess
+2017/06/07 21:31:27.387 +0100 INFO [ProcessJob] total 4
+10247 [Thread-54] INFO azkaban.jobExecutor.ProcessJob  - total 4
+2017/06/07 21:31:27.393 +0100 INFO [ProcessJob] drwxr-xr-x. 2 root root  80 Jun  7 21:31 .
+10253 [Thread-54] INFO azkaban.jobExecutor.ProcessJob  - drwxr-xr-x. 2 root root  80 Jun  7 21:31 .
+2017/06/07 21:31:27.394 +0100 INFO [ProcessJob] drwxr-xr-x. 3 root root  60 Jun  7 21:31 ..
+10254 [Thread-54] INFO azkaban.jobExecutor.ProcessJob  - drwxr-xr-x. 3 root root  60 Jun  7 21:31 ..
+2017/06/07 21:31:27.394 +0100 INFO [ProcessJob] -rw-r--r--. 1 root root   0 Jun  7 21:31 TestProcess_output_330145908621169828_tmp
+10254 [Thread-54] INFO azkaban.jobExecutor.ProcessJob  - -rw-r--r--. 1 root root   0 Jun  7 21:31 TestProcess_output_330145908621169828_tmp
+2017/06/07 21:31:27.394 +0100 INFO [ProcessJob] -rw-r--r--. 1 root root 285 Jun  7 21:31 TestProcess_props_168350322547844222_tmp
+10254 [Thread-54] INFO azkaban.jobExecutor.ProcessJob  - -rw-r--r--. 1 root root 285 Jun  7 21:31 TestProcess_props_168350322547844222_tmp
+2017/06/07 21:31:27.397 +0100 INFO [ProcessJob] Process completed successfully in 0 seconds.
+10257 [Test worker] INFO azkaban.jobExecutor.ProcessJob  - Process completed successfully in 0 seconds.
+]]></system-out>
+  <system-err><![CDATA[cwd=/tmp/junit7926593768313488973/TestProcess
+cwd=/tmp/junit2682118907916776976/TestProcess
+output properties file=/tmp/junit2682118907916776976/TestProcess/TestProcess_output_2566587890626076574_tmp
+cwd=/tmp/junit4487097559478809823/TestProcess
+java.lang.RuntimeException: java.io.IOException: Cannot run program "xls" (in directory "/tmp/junit4487097559478809823/TestProcess"): error=2, No such file or directory
+	at azkaban.jobExecutor.ProcessJob.run(ProcessJob.java:255)
+	at azkaban.jobExecutor.ProcessJobTest.testFailedUnixCommand(ProcessJobTest.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:147)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:129)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Cannot run program "xls" (in directory "/tmp/junit4487097559478809823/TestProcess"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at azkaban.jobExecutor.utils.process.AzkabanProcess.run(AzkabanProcess.java:90)
+	at azkaban.jobExecutor.ProcessJob.run(ProcessJob.java:247)
+	... 49 more
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 51 more
+cwd=/tmp/junit6276728940256782014/TestProcess
+output properties file=/tmp/junit6276728940256782014/TestProcess/TestProcess_output_7308052401737520853_tmp
+cwd=/tmp/junit1649277247199818970/TestProcess
+output properties file=/tmp/junit1649277247199818970/TestProcess/TestProcess_output_330145908621169828_tmp
+]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.utils.PatternLayoutEscapedTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:22" hostname="mars" time="0.017">
+  <properties/>
+  <testcase name="testTab" classname="azkaban.utils.PatternLayoutEscapedTest" time="0.002"/>
+  <testcase name="testQuote" classname="azkaban.utils.PatternLayoutEscapedTest" time="0.0"/>
+  <testcase name="testWithException" classname="azkaban.utils.PatternLayoutEscapedTest" time="0.002"/>
+  <testcase name="testNewLine" classname="azkaban.utils.PatternLayoutEscapedTest" time="0.001"/>
+  <testcase name="testBackSlash" classname="azkaban.utils.PatternLayoutEscapedTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

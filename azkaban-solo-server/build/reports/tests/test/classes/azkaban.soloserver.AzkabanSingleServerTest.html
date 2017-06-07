@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class azkaban.soloserver.AzkabanSingleServerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class azkaban.soloserver.AzkabanSingleServerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/azkaban.soloserver.html">azkaban.soloserver</a> &gt; AzkabanSingleServerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.423s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testInjection</td>
+<td>3.423s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2017/06/07 21:31:54.088 +0100 INFO [AzkabanDatabaseUpdater] [Azkaban] Use scripting directory /opt/azkaban/azkaban-db/src/main/sql
+2017/06/07 21:31:54.092 +0100 INFO [AzkabanDatabaseUpdater] [Azkaban] Will auto update any changes.
+2017/06/07 21:31:54.106 +0100 INFO [DataSourceUtils] [Azkaban] h2 DB path: /opt/azkaban/azkaban-solo-server/./h2
+2017/06/07 21:31:54.228 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Searching for installed tables
+2017/06/07 21:31:54.830 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Searching for table versions in the properties table
+2017/06/07 21:31:54.831 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Properties table doesn't exist.
+2017/06/07 21:31:54.843 +0100 INFO [AzkabanDatabaseUpdater] [Azkaban] Need to update the db.
+2017/06/07 21:31:54.844 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] No installed tables found.
+2017/06/07 21:31:54.844 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] The following are missing tables that need to be installed
+2017/06/07 21:31:54.844 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  execution_logs
+2017/06/07 21:31:54.845 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  projects
+2017/06/07 21:31:54.845 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  project_files
+2017/06/07 21:31:54.845 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  executor_events
+2017/06/07 21:31:54.845 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  execution_jobs
+2017/06/07 21:31:54.846 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  project_flows
+2017/06/07 21:31:54.846 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  triggers
+2017/06/07 21:31:54.847 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  project_versions
+2017/06/07 21:31:54.847 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  project_events
+2017/06/07 21:31:54.848 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  active_sla
+2017/06/07 21:31:54.849 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  active_executing_flows
+2017/06/07 21:31:54.849 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  execution_flows
+2017/06/07 21:31:54.850 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  executors
+2017/06/07 21:31:54.850 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  project_permissions
+2017/06/07 21:31:54.850 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  properties
+2017/06/07 21:31:54.850 +0100 INFO [AzkabanDatabaseSetup] [Azkaban]  project_properties
+2017/06/07 21:31:54.851 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] No tables need to be updated.
+2017/06/07 21:31:54.851 +0100 INFO [AzkabanDatabaseUpdater] [Azkaban] Updating DB
+2017/06/07 21:31:54.852 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table properties version 3.10.1
+2017/06/07 21:31:54.874 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table execution_logs version 3.10.1
+2017/06/07 21:31:54.888 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table projects version 3.10.1
+2017/06/07 21:31:54.898 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table project_files version 3.10.1
+2017/06/07 21:31:54.903 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table executor_events version 3.10.1
+2017/06/07 21:31:54.906 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table execution_jobs version 3.10.1
+2017/06/07 21:31:54.920 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table project_flows version 3.10.1
+2017/06/07 21:31:54.925 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table triggers version 3.10.1
+2017/06/07 21:31:54.931 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table project_versions version 3.10.1
+2017/06/07 21:31:54.939 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table project_events version 3.10.1
+2017/06/07 21:31:54.943 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table active_sla version 3.10.1
+2017/06/07 21:31:54.947 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table active_executing_flows version 3.10.1
+2017/06/07 21:31:54.951 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table execution_flows version 3.10.1
+2017/06/07 21:31:54.965 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table executors version 3.10.1
+2017/06/07 21:31:54.973 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table project_permissions version 3.10.1
+2017/06/07 21:31:54.975 +0100 INFO [AzkabanDatabaseSetup] [Azkaban] Creating new table project_properties version 3.10.1
+2017/06/07 21:31:55.763 +0100 INFO [WebServerProvider] [Azkaban] Setting up connector with stats on: true
+2017/06/07 21:31:55.784 +0100 INFO [log] [Azkaban] Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2017/06/07 21:31:55.785 +0100 INFO [WebServerProvider] [Azkaban] Starting server on port: 0
+2017/06/07 21:31:56.213 +0100 INFO [XmlUserManager] [Azkaban] Loading user azkaban
+2017/06/07 21:31:56.216 +0100 INFO [XmlUserManager] [Azkaban] Loading user metrics
+2017/06/07 21:31:56.220 +0100 INFO [DataSourceUtils] [Azkaban] h2 DB path: /opt/azkaban/azkaban-solo-server/./h2
+2017/06/07 21:31:56.243 +0100 INFO [ExecutorManager] [Azkaban] Initializing local executor localhost:12321
+2017/06/07 21:31:56.436 +0100 INFO [DataSourceUtils] [Azkaban] h2 DB path: /opt/azkaban/azkaban-solo-server/./h2
+2017/06/07 21:31:56.437 +0100 INFO [ProjectManager] [Azkaban] Project version retention is set to 3
+2017/06/07 21:31:56.444 +0100 WARN [XmlValidatorManager] [Azkaban] Validator directory validators does not exist or is not a directory.
+2017/06/07 21:31:56.445 +0100 INFO [ExecutorManager] [Azkaban] Cleaning old logs from execution_logs
+2017/06/07 21:31:56.466 +0100 WARN [XmlValidatorManager] [Azkaban] Azkaban properties file does not contain the key project.validators.xml.file
+2017/06/07 21:31:56.645 +0100 INFO [AzkabanCommonModule] [Azkaban] h2 DB path: /opt/azkaban/azkaban-solo-server/./h2
+2017/06/07 21:31:56.668 +0100 INFO [ExecutorManager] [Azkaban] Cleaning old log files before 2017-03-15T20:31:56.481Z
+2017/06/07 21:31:56.686 +0100 INFO [ExecutorManager] [Azkaban] Cleaned up 0 log entries.
+2017/06/07 21:31:56.693 +0100 INFO [ExecutorManager] [Azkaban] log clean up time: 0 seconds.
+2017/06/07 21:31:56.752 +0100 INFO [TriggerManager] [Azkaban] TriggerManager loaded.
+2017/06/07 21:31:56.753 +0100 INFO [AzkabanWebServer] [Azkaban] Loading built-in checker and action types
+2017/06/07 21:31:56.758 +0100 INFO [CheckerTypeLoader] [Azkaban] Registering checker BasicTimeChecker
+2017/06/07 21:31:56.760 +0100 INFO [CheckerTypeLoader] [Azkaban] Registering checker SlaChecker
+2017/06/07 21:31:56.767 +0100 INFO [CheckerTypeLoader] [Azkaban] Registering checker ExecutionChecker
+2017/06/07 21:31:56.773 +0100 INFO [ActionTypeLoader] [Azkaban] Registering action ExecuteFlowAction
+2017/06/07 21:31:56.777 +0100 INFO [ActionTypeLoader] [Azkaban] Registering action KillExecutionAction
+2017/06/07 21:31:56.781 +0100 INFO [ActionTypeLoader] [Azkaban] Registering action AlertAction
+2017/06/07 21:31:56.781 +0100 INFO [ActionTypeLoader] [Azkaban] Registering action CreateTriggerAction
+2017/06/07 21:31:56.782 +0100 INFO [AzkabanWebServer] [Azkaban] Loading trigger based scheduler
+2017/06/07 21:31:56.785 +0100 INFO [AzkabanWebServer] [Azkaban] Loading plug-in checker and action types
+2017/06/07 21:31:56.797 +0100 ERROR [AzkabanWebServer] [Azkaban] plugin path plugins/triggers doesn't exist!
+2017/06/07 21:31:56.797 +0100 INFO [AzkabanWebServer] [Azkaban] Registering MBeans...
+2017/06/07 21:31:56.837 +0100 INFO [AzkabanWebServer] [Azkaban] Bean azkaban.jmx.JmxJettyServer registered.
+2017/06/07 21:31:56.839 +0100 INFO [AzkabanWebServer] [Azkaban] Bean azkaban.jmx.JmxTriggerManager registered.
+2017/06/07 21:31:56.858 +0100 INFO [AzkabanWebServer] [Azkaban] Bean azkaban.jmx.JmxExecutorManager registered.
+2017/06/07 21:31:56.922 +0100 INFO [AzkabanWebServer] [Azkaban] Bean org.apache.log4j.jmx.HierarchyDynamicMBean registered.
+************* loginLoggerObjName is null, make sure there is a logger with name azkaban.webapp.servlet.LoginAbstractAzkabanServlet
+2017/06/07 21:31:56.926 +0100 INFO [FlowRunnerManager] [Azkaban] Execution dir retention set to 86400000 ms
+2017/06/07 21:31:56.927 +0100 INFO [FlowRunnerManager] [Azkaban] useNewThreadPool: false
+2017/06/07 21:31:56.934 +0100 INFO [JobTypeManager] [Azkaban] Loading plugin default job types
+2017/06/07 21:31:56.940 +0100 INFO [AzkabanExecutorServer] [Azkaban] Setting up connector with stats on: true
+2017/06/07 21:31:56.942 +0100 INFO [AzkabanExecutorServer] [Azkaban] Jetty connector name: 0.0.0.0:12321, default header buffer size: 4096
+2017/06/07 21:31:56.943 +0100 INFO [AzkabanExecutorServer] [Azkaban] Jetty connector name: 0.0.0.0:12321, (if) new header buffer size: 4096
+2017/06/07 21:31:56.941 +0100 INFO [FlowRunnerManager] [Azkaban] # of executing flows: 0
+2017/06/07 21:31:56.947 +0100 INFO [FlowRunnerManager] [Azkaban] Cleaning recently finished
+2017/06/07 21:31:56.948 +0100 INFO [FlowRunnerManager] [Azkaban] Cleaning old execution dirs
+2017/06/07 21:31:56.993 +0100 INFO [JmxJobMBeanManager] [Azkaban] Initializing azkaban.execapp.jmx.JmxJobMBeanManager
+2017/06/07 21:31:56.994 +0100 INFO [AzkabanExecutorServer] [Azkaban] Job callback enabled? true
+2017/06/07 21:31:56.997 +0100 INFO [JobCallbackManager] [Azkaban] Initializing
+2017/06/07 21:31:57.003 +0100 INFO [JobCallbackRequestMaker] [Azkaban] responseWaitTimeoutMS: 5000
+2017/06/07 21:31:57.005 +0100 INFO [JobCallbackRequestMaker] [Azkaban] Global request configuration [expectContinueEnabled=false, proxy=null, localAddress=null, cookieSpec=null, redirectsEnabled=true, relativeRedirectsAllowed=true, maxRedirects=50, circularRedirectsAllowed=false, authenticationEnabled=true, targetPreferredAuthSchemes=null, proxyPreferredAuthSchemes=null, connectionRequestTimeout=3000, connectTimeout=3000, socketTimeout=3000, contentCompressionEnabled=true]
+2017/06/07 21:31:57.376 +0100 INFO [JobCallbackRequestMaker] [Azkaban] Jobcall thread pool size: 10
+2017/06/07 21:31:57.392 +0100 INFO [JobCallbackRequestMaker] [Azkaban] Initialization for azkaban.execapp.event.JobCallbackRequestMaker is completed
+2017/06/07 21:31:57.402 +0100 INFO [JobCallbackManager] [Azkaban] Initialization completed azkaban.execapp.event.JobCallbackManager
+2017/06/07 21:31:57.403 +0100 INFO [JobCallbackManager] [Azkaban] azkabanHostName mars
+2017/06/07 21:31:57.403 +0100 INFO [AzkabanExecutorServer] [Azkaban] Registering MBeans...
+2017/06/07 21:31:57.403 +0100 INFO [AzkabanExecutorServer] [Azkaban] Bean azkaban.jmx.JmxJettyServer registered.
+2017/06/07 21:31:57.411 +0100 INFO [AzkabanExecutorServer] [Azkaban] Bean azkaban.execapp.jmx.JmxFlowRunnerManager registered.
+2017/06/07 21:31:57.417 +0100 INFO [AzkabanExecutorServer] [Azkaban] Bean azkaban.execapp.jmx.JmxJobMBeanManager registered.
+2017/06/07 21:31:57.423 +0100 INFO [AzkabanExecutorServer] [Azkaban] Bean azkaban.execapp.jmx.JmxJobCallback registered.
+2017/06/07 21:31:57.423 +0100 INFO [AzkabanExecutorServer] [Azkaban] No value for property: jmx.attribute.processor.class was found
+2017/06/07 21:31:57.424 +0100 INFO [log] [Azkaban] jetty-6.1.26
+2017/06/07 21:31:57.467 +0100 INFO [log] [Azkaban] Started SocketConnector@0.0.0.0:12321
+2017/06/07 21:31:57.478 +0100 INFO [AzkabanExecutorServer] [Azkaban] Started Executor Server on mars.home:12321
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.5</a> at 07-Jun-2017 21:31:57</p>
+</div>
+</div>
+</body>
+</html>

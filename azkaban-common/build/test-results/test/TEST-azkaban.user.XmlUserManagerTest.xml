@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.user.XmlUserManagerTest" tests="3" skipped="2" failures="0" errors="0" timestamp="2017-06-07T20:31:22" hostname="mars" time="0.006">
+  <properties/>
+  <testcase name="testFilePropNotSet" classname="azkaban.user.XmlUserManagerTest" time="0.001"/>
+  <testcase name="testBasicLoad" classname="azkaban.user.XmlUserManagerTest" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase name="testDoNotExist" classname="azkaban.user.XmlUserManagerTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

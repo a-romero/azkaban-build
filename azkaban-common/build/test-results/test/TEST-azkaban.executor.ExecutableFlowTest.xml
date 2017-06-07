@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.executor.ExecutableFlowTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:20" hostname="mars" time="0.437">
+  <properties/>
+  <testcase name="testExecutorFlowJson" classname="azkaban.executor.ExecutableFlowTest" time="0.24"/>
+  <testcase name="testExecutorFlowJson2" classname="azkaban.executor.ExecutableFlowTest" time="0.101"/>
+  <testcase name="testExecutorFlowUpdates" classname="azkaban.executor.ExecutableFlowTest" time="0.04"/>
+  <testcase name="testExecutorFlowCreation" classname="azkaban.executor.ExecutableFlowTest" time="0.056"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

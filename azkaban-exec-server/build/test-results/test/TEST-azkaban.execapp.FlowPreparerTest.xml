@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.execapp.FlowPreparerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:34:34" hostname="mars" time="0.097">
+  <properties/>
+  <testcase name="testSetupFlow" classname="azkaban.execapp.FlowPreparerTest" time="0.093"/>
+  <testcase name="testSetupProject" classname="azkaban.execapp.FlowPreparerTest" time="0.004"/>
+  <system-out><![CDATA[2017/06/07 21:34:34.990 +0100 INFO [Test worker] [FlowPreparer] Preparing Project: ProjectVersion{projectId=12, version=34, installedDir=projects/12.34}
+2017/06/07 21:34:34.994 +0100 INFO [Test worker] [FlowPreparer] Downloading zip file.
+2017/06/07 21:34:34.997 +0100 WARN [Test worker] [FlowPreparer] Project Preparation complete. [ProjectVersion{projectId=12, version=34, installedDir=projects/12.34}]
+2017/06/07 21:34:35.025 +0100 INFO [Test worker] [FlowPreparer] Flow Preparation complete. [execid: 12345, path: executions/12345]
+2017/06/07 21:34:35.027 +0100 INFO [Test worker] [FlowPreparer] Preparing Project: ProjectVersion{projectId=12, version=34, installedDir=projects/sample_project_01}
+2017/06/07 21:34:35.028 +0100 INFO [Test worker] [FlowPreparer] Downloading zip file.
+2017/06/07 21:34:35.029 +0100 WARN [Test worker] [FlowPreparer] Project Preparation complete. [ProjectVersion{projectId=12, version=34, installedDir=projects/sample_project_01}]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

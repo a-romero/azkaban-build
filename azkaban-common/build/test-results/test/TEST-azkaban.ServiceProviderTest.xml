@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.ServiceProviderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:18" hostname="mars" time="0.996">
+  <properties/>
+  <testcase name="testInjections" classname="azkaban.ServiceProviderTest" time="0.996"/>
+  <system-out><![CDATA[2017/06/07 21:31:19.247 +0100 INFO [DataSourceUtils] h2 DB path: /opt/azkaban/azkaban-common/h2
+2017/06/07 21:31:19.254 +0100 INFO [DataSourceUtils] h2 DB path: /opt/azkaban/azkaban-common/h2
+2017/06/07 21:31:19.266 +0100 INFO [LocalStorage] Creating dir: /opt/azkaban/azkaban-common/AZKABAN_LOCAL_TEST_STORAGE
+2017/06/07 21:31:19.269 +0100 INFO [AzkabanCommonModule] h2 DB path: /opt/azkaban/azkaban-common/h2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

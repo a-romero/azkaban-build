@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.trigger.ConditionTest" tests="2" skipped="1" failures="0" errors="0" timestamp="2017-06-07T20:31:48" hostname="mars" time="0.011">
+  <properties/>
+  <testcase name="jsonConversionTest" classname="azkaban.trigger.ConditionTest" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase name="conditionTest" classname="azkaban.trigger.ConditionTest" time="0.007"/>
+  <system-out><![CDATA[Setting expression ( thresholdchecker1.eval() && thresholdchecker2.eval() ) || ( thresholdchecker1.eval() && !thresholdchecker2.eval() )
+Setting expression ( thresholdchecker1.eval() && thresholdchecker2.eval() ) || ( thresholdchecker1.eval() && thresholdchecker2.eval() )
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

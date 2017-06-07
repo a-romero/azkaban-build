@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.utils.RestfulApiClientTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:22" hostname="mars" time="0.036">
+  <properties/>
+  <testcase name="testContentLengthOverride" classname="azkaban.utils.RestfulApiClientTest" time="0.031"/>
+  <testcase name="testHttpGetWithHeaderItems" classname="azkaban.utils.RestfulApiClientTest" time="0.001"/>
+  <testcase name="testHttpDelete" classname="azkaban.utils.RestfulApiClientTest" time="0.001"/>
+  <testcase name="testHttpPostWOBody" classname="azkaban.utils.RestfulApiClientTest" time="0.0"/>
+  <testcase name="testHttpPost" classname="azkaban.utils.RestfulApiClientTest" time="0.0"/>
+  <testcase name="testHttpGet" classname="azkaban.utils.RestfulApiClientTest" time="0.001"/>
+  <testcase name="testHttpPut" classname="azkaban.utils.RestfulApiClientTest" time="0.0"/>
+  <testcase name="testContentLength" classname="azkaban.utils.RestfulApiClientTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

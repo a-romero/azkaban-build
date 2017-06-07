@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.execapp.JobRunnerTest" tests="7" skipped="4" failures="0" errors="0" timestamp="2017-06-07T20:34:40" hostname="mars" time="2.507">
+  <properties/>
+  <testcase name="testDelayedExecutionCancelledJob" classname="azkaban.execapp.JobRunnerTest" time="2.505"/>
+  <testcase name="testBasicRun" classname="azkaban.execapp.JobRunnerTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testFailedRun" classname="azkaban.execapp.JobRunnerTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testDisabledRun" classname="azkaban.execapp.JobRunnerTest" time="0.001"/>
+  <testcase name="testCancelRun" classname="azkaban.execapp.JobRunnerTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testPreKilledRun" classname="azkaban.execapp.JobRunnerTest" time="0.0"/>
+  <testcase name="testDelayedExecutionJob" classname="azkaban.execapp.JobRunnerTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[Create temp dir
+2017/06/07 21:34:40.399 +0100 INFO [Test worker] [JobTypeManager] Loading plugin default job types
+2017/06/07 21:34:40.400 +0100 INFO [JobRunner-testJob-1] [JobRunnerTest] Created file appender for job testJob
+2017/06/07 21:34:40.400 +0100 INFO [JobRunner-testJob-1] [JobRunnerTest] Attached file appender for job testJob
+2017/06/07 21:34:42.401 +0100 INFO [JobRunner-testJob-1] [MockExecutorLoader] Uploaded log for [testJob]:[1]:
+07-06-2017 21:34:40 BST testJob INFO - Delaying start of execution for 5000 milliseconds.
+07-06-2017 21:34:42 BST testJob ERROR - Kill has been called.
+07-06-2017 21:34:42 BST testJob ERROR - Job hasn't started yet.
+07-06-2017 21:34:42 BST testJob INFO - Execution has been delayed for 5000 ms. Continuing with execution.
+07-06-2017 21:34:42 BST testJob INFO - Job was killed while in delay. Quiting.
+07-06-2017 21:34:42 BST testJob INFO - Finishing job testJob attempt: 0 at 1496867682401 with status KILLED
+
+2017/06/07 21:34:42.401 +0100 INFO [JobRunner-testJob-1] [JobRunnerTest] No attachment file for job testJob written.
+Teardown temp dir
+Create temp dir
+2017/06/07 21:34:42.902 +0100 INFO [Test worker] [JobTypeManager] Loading plugin default job types
+Teardown temp dir
+Create temp dir
+2017/06/07 21:34:42.904 +0100 INFO [JobRunner-testJob-1] [JobTypeManager] Loading plugin default job types
+Teardown temp dir
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

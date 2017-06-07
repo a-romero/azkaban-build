@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.db.DatabaseOperatorImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-06-07T18:08:29" hostname="mars" time="2.013">
+  <properties/>
+  <testcase name="testValidQuery" classname="azkaban.db.DatabaseOperatorImplTest" time="1.944"/>
+  <testcase name="testTypoSqlStatement" classname="azkaban.db.DatabaseOperatorImplTest" time="0.022"/>
+  <testcase name="testInvalidUpdate" classname="azkaban.db.DatabaseOperatorImplTest" time="0.004"/>
+  <testcase name="testTransaction" classname="azkaban.db.DatabaseOperatorImplTest" time="0.027"/>
+  <testcase name="testInvalidQuery" classname="azkaban.db.DatabaseOperatorImplTest" time="0.006"/>
+  <testcase name="testValidUpdate" classname="azkaban.db.DatabaseOperatorImplTest" time="0.007"/>
+  <system-out><![CDATA[testTypoSqlStatement
+2017/06/07 19:08:31.041 +0100 ERROR [DatabaseOperatorImpl] query failed
+java.sql.SQLException
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.execapp.event.BlockingStatusTest" tests="4" skipped="4" failures="0" errors="0" timestamp="2017-06-07T20:34:40" hostname="mars" time="0.001">
+  <properties/>
+  <testcase name="testUnfinishedBlockSeveralChanges" classname="azkaban.execapp.event.BlockingStatusTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testUnfinishedBlock" classname="azkaban.execapp.event.BlockingStatusTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testFinishedBlock" classname="azkaban.execapp.event.BlockingStatusTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testMultipleWatchers" classname="azkaban.execapp.event.BlockingStatusTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

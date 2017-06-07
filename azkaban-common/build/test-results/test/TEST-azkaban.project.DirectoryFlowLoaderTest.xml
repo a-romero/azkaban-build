@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.project.DirectoryFlowLoaderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:22" hostname="mars" time="0.04">
+  <properties/>
+  <testcase name="testDirectoryLoad" classname="azkaban.project.DirectoryFlowLoaderTest" time="0.027"/>
+  <testcase name="testRecursiveLoadEmbeddedFlow" classname="azkaban.project.DirectoryFlowLoaderTest" time="0.009"/>
+  <testcase name="testLoadEmbeddedFlow" classname="azkaban.project.DirectoryFlowLoaderTest" time="0.003"/>
+  <system-out><![CDATA[2017/06/07 21:31:22.228 +0100 INFO [DirectoryFlowLoaderTest] Adding prop1.properties
+5088 [Test worker] INFO azkaban.project.DirectoryFlowLoaderTest  - Adding prop1.properties
+2017/06/07 21:31:22.229 +0100 INFO [DirectoryFlowLoaderTest] Adding prop2.properties
+5089 [Test worker] INFO azkaban.project.DirectoryFlowLoaderTest  - Adding prop2.properties
+2017/06/07 21:31:22.251 +0100 INFO [DirectoryFlowLoaderTest] 5
+5111 [Test worker] INFO azkaban.project.DirectoryFlowLoaderTest  - 5
+Embedded flow cycle found in innerFlow->jobe
+Embedded flow cycle found in selfreference->selfreference
+Embedded flow cycle found in jobe->innerFlow
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

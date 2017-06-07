@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.server.HttpRequestUtilsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:17" hostname="mars" time="1.026">
+  <properties/>
+  <testcase name="testInvalidIntegerParam" classname="azkaban.server.HttpRequestUtilsTest" time="0.013"/>
+  <testcase name="testvalidIntegerParam" classname="azkaban.server.HttpRequestUtilsTest" time="0.001"/>
+  <testcase name="TestFilterAdminOnlyFlowParams" classname="azkaban.server.HttpRequestUtilsTest" time="0.965"/>
+  <testcase name="TestFilterNonAdminOnlyFlowParams" classname="azkaban.server.HttpRequestUtilsTest" time="0.025"/>
+  <testcase name="testHasAdminPermission" classname="azkaban.server.HttpRequestUtilsTest" time="0.008"/>
+  <testcase name="testHasOrdinaryPermission" classname="azkaban.server.HttpRequestUtilsTest" time="0.007"/>
+  <system-out><![CDATA[2017/06/07 21:31:18.227 +0100 INFO [XmlUserManager] Loading user testAdmin
+2017/06/07 21:31:18.228 +0100 INFO [XmlUserManager] Loading user testUser
+2017/06/07 21:31:18.255 +0100 INFO [XmlUserManager] Loading user testAdmin
+2017/06/07 21:31:18.257 +0100 INFO [XmlUserManager] Loading user testUser
+2017/06/07 21:31:18.266 +0100 INFO [XmlUserManager] Loading user testAdmin
+2017/06/07 21:31:18.267 +0100 INFO [XmlUserManager] Loading user testUser
+2017/06/07 21:31:18.276 +0100 INFO [XmlUserManager] Loading user testAdmin
+2017/06/07 21:31:18.277 +0100 INFO [XmlUserManager] Loading user testUser
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.utils.OsMemoryUtilTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:22" hostname="mars" time="0.039">
+  <properties/>
+  <testcase name="getOsTotalFreeMemorySizeMissingEntry" classname="azkaban.utils.OsMemoryUtilTest" time="0.002"/>
+  <testcase name="getOsTotalFreeMemorySize" classname="azkaban.utils.OsMemoryUtilTest" time="0.0"/>
+  <testcase name="canReadMemInfoFileIfExists" classname="azkaban.utils.OsMemoryUtilTest" time="0.03"/>
+  <testcase name="parseMemoryLine" classname="azkaban.utils.OsMemoryUtilTest" time="0.001"/>
+  <testcase name="parseIncorrectMemoryLine" classname="azkaban.utils.OsMemoryUtilTest" time="0.001"/>
+  <testcase name="getOsTotalFreeMemorySizeWrongEntry" classname="azkaban.utils.OsMemoryUtilTest" time="0.002"/>
+  <system-out><![CDATA[2017/06/07 21:31:22.923 +0100 ERROR [OsMemoryUtil] Expect 4 keys in the meminfo file. Got 1. content: [MemFree:        1 kB, Foo: 10 kB]
+5783 [Test worker] ERROR azkaban.utils.OsMemoryUtil  - Expect 4 keys in the meminfo file. Got 1. content: [MemFree:        1 kB, Foo: 10 kB]
+2017/06/07 21:31:22.958 +0100 ERROR [OsMemoryUtil] Failed to parse the meminfo file. Line: MemFree:        ab kB
+5818 [Test worker] ERROR azkaban.utils.OsMemoryUtil  - Failed to parse the meminfo file. Line: MemFree:        ab kB
+2017/06/07 21:31:22.961 +0100 ERROR [OsMemoryUtil] Failed to parse the meminfo file. Line: MemFree:        foo kB
+5821 [Test worker] ERROR azkaban.utils.OsMemoryUtil  - Failed to parse the meminfo file. Line: MemFree:        foo kB
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

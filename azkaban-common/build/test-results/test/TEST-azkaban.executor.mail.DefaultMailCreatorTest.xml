@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.executor.mail.DefaultMailCreatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:19" hostname="mars" time="0.163">
+  <properties/>
+  <testcase name="createFirstErrorMessage" classname="azkaban.executor.mail.DefaultMailCreatorTest" time="0.158"/>
+  <testcase name="createErrorEmail" classname="azkaban.executor.mail.DefaultMailCreatorTest" time="0.002"/>
+  <testcase name="createSuccessEmail" classname="azkaban.executor.mail.DefaultMailCreatorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

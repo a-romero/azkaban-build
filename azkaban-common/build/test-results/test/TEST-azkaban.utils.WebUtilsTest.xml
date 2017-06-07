@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.utils.WebUtilsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:22" hostname="mars" time="0.001">
+  <properties/>
+  <testcase name="testWhenXForwardedForHeaderMultipleUpstreamsUseHeader" classname="azkaban.utils.WebUtilsTest" time="0.001"/>
+  <testcase name="testWhenXForwardedForHeaderUseHeader" classname="azkaban.utils.WebUtilsTest" time="0.0"/>
+  <testcase name="testWhenClientIpNoPort" classname="azkaban.utils.WebUtilsTest" time="0.0"/>
+  <testcase name="testWhenNoXForwardedForHeaderUseClientIp" classname="azkaban.utils.WebUtilsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

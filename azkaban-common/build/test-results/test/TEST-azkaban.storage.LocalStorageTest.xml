@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.storage.LocalStorageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:22" hostname="mars" time="0.026">
+  <properties/>
+  <testcase name="testPutGet" classname="azkaban.storage.LocalStorageTest" time="0.026"/>
+  <system-out><![CDATA[2017/06/07 21:31:22.664 +0100 INFO [LocalStorage] Created project dir: /opt/azkaban/azkaban-common/LOCAL_STORAGE/1
+5524 [Test worker] INFO azkaban.storage.LocalStorage  - Created project dir: /opt/azkaban/azkaban-common/LOCAL_STORAGE/1
+2017/06/07 21:31:22.685 +0100 INFO [LocalStorageTest] Key URI: 1/1-��?ΰ�Ǉ�.����*�.zip
+5545 [Test worker] INFO azkaban.storage.LocalStorageTest  - Key URI: 1/1-��?ΰ�Ǉ�.����*�.zip
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

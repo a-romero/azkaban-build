@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.trigger.BasicTimeCheckerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:27" hostname="mars" time="20.093">
+  <properties/>
+  <testcase name="testPDTtoPSTdst1" classname="azkaban.trigger.BasicTimeCheckerTest" time="0.026"/>
+  <testcase name="testPDTtoPSTdst2" classname="azkaban.trigger.BasicTimeCheckerTest" time="0.002"/>
+  <testcase name="testPDTtoPSTdst3" classname="azkaban.trigger.BasicTimeCheckerTest" time="0.01"/>
+  <testcase name="testPSTtoPDTunderUTC" classname="azkaban.trigger.BasicTimeCheckerTest" time="0.005"/>
+  <testcase name="testQuartzCurrentZone" classname="azkaban.trigger.BasicTimeCheckerTest" time="0.01"/>
+  <testcase name="periodTimerTest" classname="azkaban.trigger.BasicTimeCheckerTest" time="20.038"/>
+  <testcase name="testPSTtoPDTdst2" classname="azkaban.trigger.BasicTimeCheckerTest" time="0.002"/>
+  <system-out><![CDATA[getNextCheckTime = 1604221200000
+getNextCheckTime = 1604217540000
+getNextCheckTime = 1604223000000
+getNextCheckTime = 1583663400000
+getNextCheckTime = 2556057600000
+2017/06/07 21:31:37.760 +0100 INFO [Condition] Done resetting checkers. The next check time will be 2017-06-07T21:31:47.722+01:00
+20620 [Test worker] INFO azkaban.trigger.Condition  - Done resetting checkers. The next check time will be 2017-06-07T21:31:47.722+01:00
+getNextCheckTime = 1583746200000
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

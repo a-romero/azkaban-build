@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.webapp.WebMetricsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:32" hostname="mars" time="0.228">
+  <properties/>
+  <testcase name="testLogFetchLatencyMetrics" classname="azkaban.webapp.WebMetricsTest" time="0.228"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.utils.ExternalLinkUtilsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:23" hostname="mars" time="0.053">
+  <properties/>
+  <testcase name="testGetExternalAnalyzerValidFormat" classname="azkaban.utils.ExternalLinkUtilsTest" time="0.042"/>
+  <testcase name="testEncodingToUFT8" classname="azkaban.utils.ExternalLinkUtilsTest" time="0.001"/>
+  <testcase name="testGetExternalAnalyzerNotConfigured" classname="azkaban.utils.ExternalLinkUtilsTest" time="0.0"/>
+  <testcase name="testGetLogViewerNotConfigured" classname="azkaban.utils.ExternalLinkUtilsTest" time="0.001"/>
+  <testcase name="testFetchURL" classname="azkaban.utils.ExternalLinkUtilsTest" time="0.001"/>
+  <testcase name="testGetExternalLogViewerValidFormat" classname="azkaban.utils.ExternalLinkUtilsTest" time="0.002"/>
+  <system-out><![CDATA[2017/06/07 21:31:23.643 +0100 INFO [ExternalLinkUtils] Creating link: http://elephant.linkedin.com/search?q=http%3A%2F%2Flocalhost%3A8081%2Fexecutor%3Fexecid%3D1
+6503 [Test worker] INFO azkaban.utils.ExternalLinkUtils  - Creating link: http://elephant.linkedin.com/search?q=http%3A%2F%2Flocalhost%3A8081%2Fexecutor%3Fexecid%3D1
+2017/06/07 21:31:23.654 +0100 INFO [ExternalLinkUtils] Creating link: http://kibana.linkedin.com/search?jobid=Some%20%2B%20job&&execid=1
+6514 [Test worker] INFO azkaban.utils.ExternalLinkUtils  - Creating link: http://kibana.linkedin.com/search?jobid=Some%20%2B%20job&&execid=1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

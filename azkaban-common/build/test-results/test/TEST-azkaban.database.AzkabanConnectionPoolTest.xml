@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.database.AzkabanConnectionPoolTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:15" hostname="mars" time="1.952">
+  <properties/>
+  <testcase name="testConnectionDefaultAutoCommit" classname="azkaban.database.AzkabanConnectionPoolTest" time="1.925"/>
+  <testcase name="testGetNewConnectionAfterClose" classname="azkaban.database.AzkabanConnectionPoolTest" time="0.005"/>
+  <testcase name="testGetNewConnectionBeforeClose" classname="azkaban.database.AzkabanConnectionPoolTest" time="0.006"/>
+  <testcase name="testConnectionDisableAutoCommit" classname="azkaban.database.AzkabanConnectionPoolTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.metric.MetricManagerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:54" hostname="mars" time="2.013">
+  <properties/>
+  <testcase name="managerEmitterHandlingTest" classname="azkaban.metric.MetricManagerTest" time="2.012"/>
+  <testcase name="managerStatusTest" classname="azkaban.metric.MetricManagerTest" time="0.001"/>
+  <testcase name="managerMetricMaintenanceTest" classname="azkaban.metric.MetricManagerTest" time="0.0"/>
+  <testcase name="managerEmitterMaintenanceTest" classname="azkaban.metric.MetricManagerTest" time="0.0"/>
+  <system-out><![CDATA[2017/06/07 21:31:54.308 +0100 INFO [MetricReportManager] Instantiating MetricReportManager
+37168 [Test worker] INFO azkaban.metric.MetricReportManager  - Instantiating MetricReportManager
+2017/06/07 21:31:54.309 +0100 INFO [MetricReportManager] Enabling Metric Manager
+37169 [Test worker] INFO azkaban.metric.MetricReportManager  - Enabling Metric Manager
+2017/06/07 21:31:54.320 +0100 INFO [InMemoryMetricEmitter] First time capturing metric: FakeMetric
+37180 [pool-11-thread-1] INFO azkaban.metric.inmemoryemitter.InMemoryMetricEmitter  - First time capturing metric: FakeMetric
+2017/06/07 21:31:56.319 +0100 ERROR [MetricReportManager] Failed to add metric
+39179 [Test worker] ERROR azkaban.metric.MetricReportManager  - Failed to add metric
+2017/06/07 21:31:56.319 +0100 INFO [MetricReportManager] Disabling Metric Manager
+39179 [Test worker] INFO azkaban.metric.MetricReportManager  - Disabling Metric Manager
+2017/06/07 21:31:56.320 +0100 INFO [MetricReportManager] Enabling Metric Manager
+39180 [Test worker] INFO azkaban.metric.MetricReportManager  - Enabling Metric Manager
+2017/06/07 21:31:56.320 +0100 ERROR [MetricReportManager] Failed to add metric
+39180 [Test worker] ERROR azkaban.metric.MetricReportManager  - Failed to add metric
+2017/06/07 21:31:56.320 +0100 ERROR [MetricReportManager] Failed to add metric
+39180 [Test worker] ERROR azkaban.metric.MetricReportManager  - Failed to add metric
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

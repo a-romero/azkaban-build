@@ -1,0 +1,4 @@
+-o
+/opt/azkaban/azkaban-common/build/exe/main/main
+/opt/azkaban/azkaban-common/build/objs/main/mainC/e9xt8zrig22bkrggmxao3wjpe/execute-as-user.o
+-m64

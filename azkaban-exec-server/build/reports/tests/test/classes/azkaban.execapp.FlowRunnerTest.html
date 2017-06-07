@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class azkaban.execapp.FlowRunnerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class azkaban.execapp.FlowRunnerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/azkaban.execapp.html">azkaban.execapp</a> &gt; FlowRunnerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.405s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">exec1Disabled</td>
+<td>1.304s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">exec1Failed</td>
+<td>0.558s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">exec1FailedFinishRest</td>
+<td>0.069s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">exec1FailedKillAll</td>
+<td>0.048s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">exec1Normal</td>
+<td>0.119s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">execAndCancel</td>
+<td>0.189s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">execRetries</td>
+<td>0.118s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2017/06/07 21:34:25.878 +0100 INFO [JobRunner-jobc-115] [jobf] No attachment file for job jobc written.
+Create temp dir
+2017/06/07 21:34:26.196 +0100 INFO [Test worker] [JobTypeManager] Loading plugin default job types
+2017/06/07 21:34:26.199 +0100 INFO [Test worker] [JmxJobMBeanManager] Initializing azkaban.execapp.jmx.JmxJobMBeanManager
+2017/06/07 21:34:26.413 +0100 INFO [Thread-19] [derived-member-data-2] Running execid:1 flow:derived-member-data-2 project:1 version:2
+2017/06/07 21:34:26.413 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Update active reference
+2017/06/07 21:34:26.418 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Updating initial flow directory.
+2017/06/07 21:34:26.418 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Fetching job and shared properties.
+2017/06/07 21:34:26.418 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Starting flows
+2017/06/07 21:34:26.418 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Running flow 'derived-member-data-2'.
+2017/06/07 21:34:26.419 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.419 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Submitting job 'job1' to run.
+2017/06/07 21:34:26.425 +0100 INFO [JobRunner-job1-1] [derived-member-data-2] Created file appender for job job1
+2017/06/07 21:34:26.426 +0100 INFO [JobRunner-job1-1] [derived-member-data-2] Attached file appender for job job1
+2017/06/07 21:34:26.436 +0100 WARN [JobRunner-job1-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.436 +0100 WARN [JobRunner-job1-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.437 +0100 INFO [JobRunner-job1-1] [derived-member-data-2] Job job1 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.438 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.438 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Submitting job 'job6' to run.
+2017/06/07 21:34:26.439 +0100 INFO [JobRunner-job1-1] [derived-member-data-2] No attachment file for job job1 written.
+2017/06/07 21:34:26.440 +0100 INFO [JobRunner-job6-1] [derived-member-data-2] Created file appender for job job6
+2017/06/07 21:34:26.459 +0100 INFO [JobRunner-job6-1] [derived-member-data-2] Attached file appender for job job6
+2017/06/07 21:34:26.460 +0100 WARN [JobRunner-job6-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.460 +0100 WARN [JobRunner-job6-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.440 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.461 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Submitting job 'job2d' to run.
+2017/06/07 21:34:26.467 +0100 INFO [JobRunner-job2d-1] [derived-member-data-2] Created file appender for job job2d
+2017/06/07 21:34:26.468 +0100 INFO [JobRunner-job2d-1] [derived-member-data-2] Attached file appender for job job2d
+2017/06/07 21:34:26.469 +0100 WARN [JobRunner-job2d-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.470 +0100 WARN [JobRunner-job2d-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.471 +0100 INFO [JobRunner-job6-1] [derived-member-data-2] Job job6 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.471 +0100 INFO [JobRunner-job6-1] [derived-member-data-2] No attachment file for job job6 written.
+2017/06/07 21:34:26.474 +0100 INFO [JobRunner-job2d-1] [derived-member-data-2] Job job2d finished with status FAILED in 0 seconds
+2017/06/07 21:34:26.474 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Setting derived-member-data-2 to FAILED_FINISHING
+2017/06/07 21:34:26.475 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job4' due to prior errors.
+2017/06/07 21:34:26.475 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job3' due to prior errors.
+2017/06/07 21:34:26.475 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job5' due to prior errors.
+2017/06/07 21:34:26.475 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job7' due to prior errors.
+2017/06/07 21:34:26.475 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job9' due to prior errors.
+2017/06/07 21:34:26.475 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job8' due to prior errors.
+2017/06/07 21:34:26.476 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job10' due to prior errors.
+2017/06/07 21:34:26.476 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Setting flow '' status to FAILED in 0 seconds
+2017/06/07 21:34:26.476 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Finishing up flow. Awaiting Termination
+2017/06/07 21:34:26.476 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Finished Flow
+2017/06/07 21:34:26.476 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Setting end time for flow 1 to 1496867666476
+2017/06/07 21:34:26.478 +0100 INFO [JobRunner-job2d-1] [derived-member-data-2] No attachment file for job job2d written.
+Teardown temp dir
+Create temp dir
+2017/06/07 21:34:26.494 +0100 INFO [Test worker] [JobTypeManager] Loading plugin default job types
+2017/06/07 21:34:26.497 +0100 INFO [Test worker] [JmxJobMBeanManager] Initializing azkaban.execapp.jmx.JmxJobMBeanManager
+2017/06/07 21:34:26.502 +0100 INFO [Thread-20] [derived-member-data] Running execid:1 flow:derived-member-data project:1 version:2
+2017/06/07 21:34:26.503 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Update active reference
+2017/06/07 21:34:26.504 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Updating initial flow directory.
+2017/06/07 21:34:26.504 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Fetching job and shared properties.
+2017/06/07 21:34:26.505 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Starting flows
+2017/06/07 21:34:26.505 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Running flow 'derived-member-data'.
+2017/06/07 21:34:26.505 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.505 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job-retry' to run.
+2017/06/07 21:34:26.506 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] Created file appender for job job-retry
+2017/06/07 21:34:26.507 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] Attached file appender for job job-retry
+2017/06/07 21:34:26.508 +0100 WARN [JobRunner-job-retry-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.508 +0100 WARN [JobRunner-job-retry-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.510 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] Job job-retry finished with status FAILED in 0 seconds
+2017/06/07 21:34:26.512 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Job 'job-retry' will be retried. Attempt 0 of 3
+2017/06/07 21:34:26.513 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.513 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job-retry' to run.
+2017/06/07 21:34:26.513 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] No attachment file for job job-retry written.
+2017/06/07 21:34:26.517 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] Created file appender for job job-retry
+2017/06/07 21:34:26.517 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] Attached file appender for job job-retry
+2017/06/07 21:34:26.521 +0100 WARN [JobRunner-job-retry-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.521 +0100 WARN [JobRunner-job-retry-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.523 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] Job job-retry finished with status FAILED in 0 seconds
+2017/06/07 21:34:26.535 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] No attachment file for job job-retry written.
+2017/06/07 21:34:26.536 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Job 'job-retry' will be retried. Attempt 1 of 3
+2017/06/07 21:34:26.537 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.537 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job-retry' to run.
+2017/06/07 21:34:26.544 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] Created file appender for job job-retry
+2017/06/07 21:34:26.544 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] Attached file appender for job job-retry
+2017/06/07 21:34:26.549 +0100 WARN [JobRunner-job-retry-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.549 +0100 WARN [JobRunner-job-retry-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.551 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] Job job-retry finished with status FAILED in 0 seconds
+2017/06/07 21:34:26.552 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Job 'job-retry' will be retried. Attempt 2 of 3
+2017/06/07 21:34:26.552 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.552 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job-retry' to run.
+2017/06/07 21:34:26.554 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] No attachment file for job job-retry written.
+2017/06/07 21:34:26.555 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] Created file appender for job job-retry
+2017/06/07 21:34:26.556 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] Attached file appender for job job-retry
+2017/06/07 21:34:26.557 +0100 WARN [JobRunner-job-retry-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.558 +0100 WARN [JobRunner-job-retry-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.559 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] Job job-retry finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.560 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.560 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job-pass' to run.
+2017/06/07 21:34:26.561 +0100 INFO [JobRunner-job-retry-1] [derived-member-data] No attachment file for job job-retry written.
+2017/06/07 21:34:26.563 +0100 INFO [JobRunner-job-pass-1] [derived-member-data] Created file appender for job job-pass
+2017/06/07 21:34:26.563 +0100 INFO [JobRunner-job-pass-1] [derived-member-data] Attached file appender for job job-pass
+2017/06/07 21:34:26.565 +0100 WARN [JobRunner-job-pass-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.565 +0100 WARN [JobRunner-job-pass-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.567 +0100 INFO [JobRunner-job-pass-1] [derived-member-data] Job job-pass finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.568 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.568 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job-retry-fail' to run.
+2017/06/07 21:34:26.571 +0100 INFO [JobRunner-job-pass-1] [derived-member-data] No attachment file for job job-pass written.
+2017/06/07 21:34:26.573 +0100 INFO [JobRunner-job-retry-fail-1] [derived-member-data] Created file appender for job job-retry-fail
+2017/06/07 21:34:26.573 +0100 INFO [JobRunner-job-retry-fail-1] [derived-member-data] Attached file appender for job job-retry-fail
+2017/06/07 21:34:26.575 +0100 WARN [JobRunner-job-retry-fail-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.576 +0100 WARN [JobRunner-job-retry-fail-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.577 +0100 INFO [JobRunner-job-retry-fail-1] [derived-member-data] Job job-retry-fail finished with status FAILED in 0 seconds
+2017/06/07 21:34:26.577 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Job 'job-retry-fail' will be retried. Attempt 0 of 2
+2017/06/07 21:34:26.578 +0100 INFO [JobRunner-job-retry-fail-1] [derived-member-data] No attachment file for job job-retry-fail written.
+2017/06/07 21:34:26.578 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.578 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job-retry-fail' to run.
+2017/06/07 21:34:26.580 +0100 INFO [JobRunner-job-retry-fail-1] [derived-member-data] Created file appender for job job-retry-fail
+2017/06/07 21:34:26.580 +0100 INFO [JobRunner-job-retry-fail-1] [derived-member-data] Attached file appender for job job-retry-fail
+2017/06/07 21:34:26.582 +0100 WARN [JobRunner-job-retry-fail-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.582 +0100 WARN [JobRunner-job-retry-fail-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.583 +0100 INFO [JobRunner-job-retry-fail-1] [derived-member-data] Job job-retry-fail finished with status FAILED in 0 seconds
+2017/06/07 21:34:26.584 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Job 'job-retry-fail' will be retried. Attempt 1 of 2
+2017/06/07 21:34:26.584 +0100 INFO [JobRunner-job-retry-fail-1] [derived-member-data] No attachment file for job job-retry-fail written.
+2017/06/07 21:34:26.584 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.584 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job-retry-fail' to run.
+2017/06/07 21:34:26.588 +0100 INFO [JobRunner-job-retry-fail-1] [derived-member-data] Created file appender for job job-retry-fail
+2017/06/07 21:34:26.588 +0100 INFO [JobRunner-job-retry-fail-1] [derived-member-data] Attached file appender for job job-retry-fail
+2017/06/07 21:34:26.595 +0100 WARN [JobRunner-job-retry-fail-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.596 +0100 WARN [JobRunner-job-retry-fail-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.598 +0100 INFO [JobRunner-job-retry-fail-1] [derived-member-data] Job job-retry-fail finished with status FAILED in 0 seconds
+2017/06/07 21:34:26.607 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Job 'job-retry-fail' has run out of retry attempts
+2017/06/07 21:34:26.608 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Setting derived-member-data to FAILED_FINISHING
+2017/06/07 21:34:26.608 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Setting flow '' status to FAILED in 0 seconds
+2017/06/07 21:34:26.608 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Finishing up flow. Awaiting Termination
+2017/06/07 21:34:26.608 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Finished Flow
+2017/06/07 21:34:26.608 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Setting end time for flow 1 to 1496867666608
+Teardown temp dir
+2017/06/07 21:34:26.610 +0100 INFO [JobRunner-job-retry-fail-1] [derived-member-data] No attachment file for job job-retry-fail written.
+Create temp dir
+2017/06/07 21:34:26.615 +0100 INFO [Test worker] [JobTypeManager] Loading plugin default job types
+2017/06/07 21:34:26.618 +0100 INFO [Test worker] [JmxJobMBeanManager] Initializing azkaban.execapp.jmx.JmxJobMBeanManager
+2017/06/07 21:34:26.643 +0100 INFO [Thread-21] [derived-member-data] Running execid:1 flow:derived-member-data project:1 version:2
+2017/06/07 21:34:26.643 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Update active reference
+2017/06/07 21:34:26.644 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Updating initial flow directory.
+2017/06/07 21:34:26.644 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Fetching job and shared properties.
+2017/06/07 21:34:26.645 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Starting flows
+2017/06/07 21:34:26.645 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Running flow 'derived-member-data'.
+2017/06/07 21:34:26.646 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.646 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job1' to run.
+2017/06/07 21:34:26.647 +0100 INFO [JobRunner-job1-1] [derived-member-data] Created file appender for job job1
+2017/06/07 21:34:26.647 +0100 INFO [JobRunner-job1-1] [derived-member-data] Attached file appender for job job1
+2017/06/07 21:34:26.651 +0100 WARN [JobRunner-job1-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.652 +0100 WARN [JobRunner-job1-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.655 +0100 INFO [JobRunner-job1-1] [derived-member-data] Job job1 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.655 +0100 INFO [JobRunner-job1-1] [derived-member-data] No attachment file for job job1 written.
+2017/06/07 21:34:26.656 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.657 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job2' to run.
+2017/06/07 21:34:26.658 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.658 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job6' to run.
+2017/06/07 21:34:26.659 +0100 INFO [JobRunner-job2-1] [derived-member-data] Created file appender for job job2
+2017/06/07 21:34:26.659 +0100 INFO [JobRunner-job2-1] [derived-member-data] Attached file appender for job job2
+2017/06/07 21:34:26.660 +0100 INFO [JobRunner-job6-1] [derived-member-data] Created file appender for job job6
+2017/06/07 21:34:26.660 +0100 INFO [JobRunner-job6-1] [derived-member-data] Attached file appender for job job6
+2017/06/07 21:34:26.661 +0100 WARN [JobRunner-job2-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.661 +0100 WARN [JobRunner-job2-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.662 +0100 WARN [JobRunner-job6-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.662 +0100 WARN [JobRunner-job6-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.662 +0100 INFO [JobRunner-job2-1] [derived-member-data] Job job2 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.663 +0100 INFO [JobRunner-job2-1] [derived-member-data] No attachment file for job job2 written.
+2017/06/07 21:34:26.663 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.663 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job4' to run.
+2017/06/07 21:34:26.664 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.665 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job3' to run.
+2017/06/07 21:34:26.673 +0100 INFO [JobRunner-job4-1] [derived-member-data] Created file appender for job job4
+2017/06/07 21:34:26.673 +0100 INFO [JobRunner-job4-1] [derived-member-data] Attached file appender for job job4
+2017/06/07 21:34:26.674 +0100 WARN [JobRunner-job4-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.674 +0100 WARN [JobRunner-job4-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.676 +0100 INFO [JobRunner-job3-1] [derived-member-data] Created file appender for job job3
+2017/06/07 21:34:26.676 +0100 INFO [JobRunner-job3-1] [derived-member-data] Attached file appender for job job3
+2017/06/07 21:34:26.678 +0100 WARN [JobRunner-job3-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.678 +0100 WARN [JobRunner-job3-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.684 +0100 INFO [JobRunner-job4-1] [derived-member-data] Job job4 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.684 +0100 INFO [JobRunner-job6-1] [derived-member-data] Job job6 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.685 +0100 INFO [JobRunner-job6-1] [derived-member-data] No attachment file for job job6 written.
+2017/06/07 21:34:26.685 +0100 INFO [JobRunner-job4-1] [derived-member-data] No attachment file for job job4 written.
+2017/06/07 21:34:26.685 +0100 INFO [JobRunner-job3-1] [derived-member-data] Job job3 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.686 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.686 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job5' to run.
+2017/06/07 21:34:26.687 +0100 INFO [JobRunner-job3-1] [derived-member-data] No attachment file for job job3 written.
+2017/06/07 21:34:26.688 +0100 INFO [JobRunner-job5-1] [derived-member-data] Created file appender for job job5
+2017/06/07 21:34:26.688 +0100 INFO [JobRunner-job5-1] [derived-member-data] Attached file appender for job job5
+2017/06/07 21:34:26.708 +0100 WARN [JobRunner-job5-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.709 +0100 WARN [JobRunner-job5-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.709 +0100 INFO [JobRunner-job5-1] [derived-member-data] Job job5 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.710 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.710 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job7' to run.
+2017/06/07 21:34:26.711 +0100 INFO [JobRunner-job5-1] [derived-member-data] No attachment file for job job5 written.
+2017/06/07 21:34:26.713 +0100 INFO [JobRunner-job7-1] [derived-member-data] Created file appender for job job7
+2017/06/07 21:34:26.713 +0100 INFO [JobRunner-job7-1] [derived-member-data] Attached file appender for job job7
+2017/06/07 21:34:26.714 +0100 WARN [JobRunner-job7-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.714 +0100 WARN [JobRunner-job7-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.715 +0100 INFO [JobRunner-job7-1] [derived-member-data] Job job7 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.716 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.716 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job8' to run.
+2017/06/07 21:34:26.717 +0100 INFO [JobRunner-job7-1] [derived-member-data] No attachment file for job job7 written.
+2017/06/07 21:34:26.718 +0100 INFO [JobRunner-job8-1] [derived-member-data] Created file appender for job job8
+2017/06/07 21:34:26.718 +0100 INFO [JobRunner-job8-1] [derived-member-data] Attached file appender for job job8
+2017/06/07 21:34:26.720 +0100 WARN [JobRunner-job8-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.720 +0100 WARN [JobRunner-job8-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.721 +0100 INFO [JobRunner-job8-1] [derived-member-data] Job job8 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.722 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.722 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job10' to run.
+2017/06/07 21:34:26.723 +0100 INFO [JobRunner-job8-1] [derived-member-data] No attachment file for job job8 written.
+2017/06/07 21:34:26.724 +0100 INFO [JobRunner-job10-1] [derived-member-data] Created file appender for job job10
+2017/06/07 21:34:26.724 +0100 INFO [JobRunner-job10-1] [derived-member-data] Attached file appender for job job10
+2017/06/07 21:34:26.725 +0100 WARN [JobRunner-job10-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.725 +0100 WARN [JobRunner-job10-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.726 +0100 INFO [JobRunner-job10-1] [derived-member-data] Job job10 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.727 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Flow '' is set to SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.727 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Finishing up flow. Awaiting Termination
+2017/06/07 21:34:26.728 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Finished Flow
+2017/06/07 21:34:26.728 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Setting end time for flow 1 to 1496867666728
+Teardown temp dir
+Create temp dir
+2017/06/07 21:34:26.731 +0100 INFO [Test worker] [JobTypeManager] Loading plugin default job types
+2017/06/07 21:34:26.734 +0100 INFO [Test worker] [JmxJobMBeanManager] Initializing azkaban.execapp.jmx.JmxJobMBeanManager
+2017/06/07 21:34:26.735 +0100 INFO [JobRunner-job10-1] [derived-member-data] No attachment file for job job10 written.
+2017/06/07 21:34:26.744 +0100 INFO [Thread-22] [derived-member-data-2] Running execid:1 flow:derived-member-data-2 project:1 version:2
+2017/06/07 21:34:26.745 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Update active reference
+2017/06/07 21:34:26.746 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Updating initial flow directory.
+2017/06/07 21:34:26.746 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Fetching job and shared properties.
+2017/06/07 21:34:26.746 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Starting flows
+2017/06/07 21:34:26.746 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Running flow 'derived-member-data-2'.
+2017/06/07 21:34:26.747 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.747 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Submitting job 'job1' to run.
+2017/06/07 21:34:26.751 +0100 INFO [JobRunner-job1-1] [derived-member-data-2] Created file appender for job job1
+2017/06/07 21:34:26.751 +0100 INFO [JobRunner-job1-1] [derived-member-data-2] Attached file appender for job job1
+2017/06/07 21:34:26.753 +0100 WARN [JobRunner-job1-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.753 +0100 WARN [JobRunner-job1-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.754 +0100 INFO [JobRunner-job1-1] [derived-member-data-2] Job job1 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.755 +0100 INFO [JobRunner-job1-1] [derived-member-data-2] No attachment file for job job1 written.
+2017/06/07 21:34:26.757 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.757 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Submitting job 'job6' to run.
+2017/06/07 21:34:26.757 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.758 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Submitting job 'job2d' to run.
+2017/06/07 21:34:26.758 +0100 INFO [JobRunner-job6-1] [derived-member-data-2] Created file appender for job job6
+2017/06/07 21:34:26.758 +0100 INFO [JobRunner-job6-1] [derived-member-data-2] Attached file appender for job job6
+2017/06/07 21:34:26.759 +0100 WARN [JobRunner-job6-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.759 +0100 WARN [JobRunner-job6-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.761 +0100 INFO [JobRunner-job2d-1] [derived-member-data-2] Created file appender for job job2d
+2017/06/07 21:34:26.761 +0100 INFO [JobRunner-job2d-1] [derived-member-data-2] Attached file appender for job job2d
+2017/06/07 21:34:26.762 +0100 WARN [JobRunner-job2d-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.762 +0100 WARN [JobRunner-job2d-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.765 +0100 INFO [JobRunner-job2d-1] [derived-member-data-2] Job job2d finished with status FAILED in 0 seconds
+2017/06/07 21:34:26.766 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Setting derived-member-data-2 to FAILED_FINISHING
+2017/06/07 21:34:26.767 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Kill has been called on flow 1
+2017/06/07 21:34:26.767 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Killing 3 jobs.
+2017/06/07 21:34:26.771 +0100 INFO [JobRunner-job2d-1] [derived-member-data-2] No attachment file for job job2d written.
+2017/06/07 21:34:26.773 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job4' due to prior errors.
+2017/06/07 21:34:26.774 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job3' due to prior errors.
+2017/06/07 21:34:26.774 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job5' due to prior errors.
+2017/06/07 21:34:26.774 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job7' due to prior errors.
+2017/06/07 21:34:26.774 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job9' due to prior errors.
+2017/06/07 21:34:26.775 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job8' due to prior errors.
+2017/06/07 21:34:26.775 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Cancelling 'job10' due to prior errors.
+2017/06/07 21:34:26.775 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Flow '' is set to KILLED in 0 seconds
+2017/06/07 21:34:26.775 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Finishing up flow. Awaiting Termination
+2017/06/07 21:34:26.775 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Finished Flow
+2017/06/07 21:34:26.775 +0100 INFO [FlowRunner-exec-1] [derived-member-data-2] Setting end time for flow 1 to 1496867666775
+Teardown temp dir
+Create temp dir
+2017/06/07 21:34:26.780 +0100 INFO [JobRunner-job6-1] [derived-member-data-2] Job job6 finished with status KILLED in 0 seconds
+2017/06/07 21:34:26.781 +0100 ERROR [JobRunner-job6-1] [JobRunner] Unexpected exception
+java.lang.NullPointerException
+	at java.util.Arrays.sort(Arrays.java:1438)
+	at azkaban.execapp.JobRunner.finalizeLogFile(JobRunner.java:522)
+	at azkaban.execapp.JobRunner.doRun(JobRunner.java:621)
+	at azkaban.execapp.JobRunner.run(JobRunner.java:558)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017/06/07 21:34:26.781 +0100 INFO [Test worker] [JobTypeManager] Loading plugin default job types
+2017/06/07 21:34:26.785 +0100 INFO [Test worker] [JmxJobMBeanManager] Initializing azkaban.execapp.jmx.JmxJobMBeanManager
+2017/06/07 21:34:26.792 +0100 INFO [Thread-23] [derived-member-data] Running execid:1 flow:derived-member-data project:1 version:2
+2017/06/07 21:34:26.792 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Update active reference
+2017/06/07 21:34:26.793 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Updating initial flow directory.
+2017/06/07 21:34:26.793 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Fetching job and shared properties.
+2017/06/07 21:34:26.793 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Starting flows
+2017/06/07 21:34:26.794 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Running flow 'derived-member-data'.
+2017/06/07 21:34:26.794 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.794 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job1' to run.
+2017/06/07 21:34:26.798 +0100 INFO [JobRunner-job1-1] [derived-member-data] Created file appender for job job1
+2017/06/07 21:34:26.799 +0100 INFO [JobRunner-job1-1] [derived-member-data] Attached file appender for job job1
+2017/06/07 21:34:26.801 +0100 WARN [JobRunner-job1-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.801 +0100 WARN [JobRunner-job1-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.803 +0100 INFO [JobRunner-job1-1] [derived-member-data] Job job1 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.804 +0100 INFO [JobRunner-job1-1] [derived-member-data] No attachment file for job job1 written.
+2017/06/07 21:34:26.804 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.804 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job2d' to run.
+2017/06/07 21:34:26.806 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.806 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job3' to run.
+2017/06/07 21:34:26.807 +0100 INFO [JobRunner-job2d-1] [derived-member-data] Created file appender for job job2d
+2017/06/07 21:34:26.807 +0100 INFO [JobRunner-job2d-1] [derived-member-data] Attached file appender for job job2d
+2017/06/07 21:34:26.808 +0100 INFO [JobRunner-job3-1] [derived-member-data] Created file appender for job job3
+2017/06/07 21:34:26.808 +0100 INFO [JobRunner-job3-1] [derived-member-data] Attached file appender for job job3
+2017/06/07 21:34:26.809 +0100 WARN [JobRunner-job2d-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.809 +0100 WARN [JobRunner-job2d-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.810 +0100 WARN [JobRunner-job3-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.812 +0100 WARN [JobRunner-job3-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.811 +0100 INFO [JobRunner-job2d-1] [derived-member-data] Job job2d finished with status FAILED in 0 seconds
+2017/06/07 21:34:26.819 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Setting derived-member-data to FAILED_FINISHING
+2017/06/07 21:34:26.819 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Cancelling 'job5' due to prior errors.
+2017/06/07 21:34:26.819 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Cancelling 'job4' due to prior errors.
+2017/06/07 21:34:26.819 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Cancelling 'job6' due to prior errors.
+2017/06/07 21:34:26.819 +0100 INFO [JobRunner-job2d-1] [derived-member-data] No attachment file for job job2d written.
+2017/06/07 21:34:26.822 +0100 INFO [JobRunner-job3-1] [derived-member-data] Job job3 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.823 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.823 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job7' to run.
+2017/06/07 21:34:26.823 +0100 INFO [JobRunner-job3-1] [derived-member-data] No attachment file for job job3 written.
+2017/06/07 21:34:26.824 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.824 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job8' to run.
+2017/06/07 21:34:26.824 +0100 INFO [JobRunner-job7-1] [derived-member-data] Created file appender for job job7
+2017/06/07 21:34:26.825 +0100 INFO [JobRunner-job7-1] [derived-member-data] Attached file appender for job job7
+2017/06/07 21:34:26.826 +0100 WARN [JobRunner-job7-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.826 +0100 WARN [JobRunner-job7-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.827 +0100 INFO [JobRunner-job7-1] [derived-member-data] Job job7 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.827 +0100 INFO [JobRunner-job7-1] [derived-member-data] No attachment file for job job7 written.
+2017/06/07 21:34:26.828 +0100 INFO [JobRunner-job8-1] [derived-member-data] Created file appender for job job8
+2017/06/07 21:34:26.828 +0100 INFO [JobRunner-job8-1] [derived-member-data] Attached file appender for job job8
+2017/06/07 21:34:26.829 +0100 WARN [JobRunner-job8-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.829 +0100 WARN [JobRunner-job8-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.830 +0100 INFO [JobRunner-job8-1] [derived-member-data] Job job8 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.831 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.831 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job9' to run.
+2017/06/07 21:34:26.831 +0100 INFO [JobRunner-job9-1] [derived-member-data] Created file appender for job job9
+2017/06/07 21:34:26.831 +0100 INFO [JobRunner-job9-1] [derived-member-data] Attached file appender for job job9
+2017/06/07 21:34:26.832 +0100 INFO [JobRunner-job8-1] [derived-member-data] No attachment file for job job8 written.
+2017/06/07 21:34:26.832 +0100 WARN [JobRunner-job9-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.832 +0100 WARN [JobRunner-job9-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.833 +0100 INFO [JobRunner-job9-1] [derived-member-data] Job job9 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.833 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Cancelling 'job10' due to prior errors.
+2017/06/07 21:34:26.834 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Setting flow '' status to FAILED in 0 seconds
+2017/06/07 21:34:26.834 +0100 INFO [JobRunner-job9-1] [derived-member-data] No attachment file for job job9 written.
+2017/06/07 21:34:26.834 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Finishing up flow. Awaiting Termination
+2017/06/07 21:34:26.834 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Finished Flow
+2017/06/07 21:34:26.834 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Setting end time for flow 1 to 1496867666834
+Teardown temp dir
+Create temp dir
+2017/06/07 21:34:26.849 +0100 INFO [Test worker] [JobTypeManager] Loading plugin default job types
+2017/06/07 21:34:26.851 +0100 INFO [Test worker] [JmxJobMBeanManager] Initializing azkaban.execapp.jmx.JmxJobMBeanManager
+2017/06/07 21:34:26.857 +0100 INFO [Thread-24] [derived-member-data] Running execid:1 flow:derived-member-data project:1 version:2
+2017/06/07 21:34:26.860 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Update active reference
+2017/06/07 21:34:26.861 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Updating initial flow directory.
+2017/06/07 21:34:26.861 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Fetching job and shared properties.
+2017/06/07 21:34:26.862 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Starting flows
+2017/06/07 21:34:26.862 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Running flow 'derived-member-data'.
+2017/06/07 21:34:26.863 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.863 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job1' to run.
+2017/06/07 21:34:26.865 +0100 INFO [JobRunner-job1-1] [derived-member-data] Created file appender for job job1
+2017/06/07 21:34:26.866 +0100 INFO [JobRunner-job1-1] [derived-member-data] Attached file appender for job job1
+2017/06/07 21:34:26.869 +0100 WARN [JobRunner-job1-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.869 +0100 WARN [JobRunner-job1-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.870 +0100 INFO [JobRunner-job1-1] [derived-member-data] Job job1 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.870 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.871 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job2' to run.
+2017/06/07 21:34:26.871 +0100 INFO [JobRunner-job1-1] [derived-member-data] No attachment file for job job1 written.
+2017/06/07 21:34:26.871 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.871 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job6' to run.
+2017/06/07 21:34:26.871 +0100 INFO [JobRunner-job2-1] [derived-member-data] Created file appender for job job2
+2017/06/07 21:34:26.871 +0100 INFO [JobRunner-job2-1] [derived-member-data] Attached file appender for job job2
+2017/06/07 21:34:26.872 +0100 WARN [JobRunner-job2-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.872 +0100 WARN [JobRunner-job2-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.873 +0100 INFO [JobRunner-job6-1] [derived-member-data] Created file appender for job job6
+2017/06/07 21:34:26.896 +0100 INFO [JobRunner-job6-1] [derived-member-data] Attached file appender for job job6
+2017/06/07 21:34:26.927 +0100 INFO [JobRunner-job2-1] [derived-member-data] Job job2 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:26.927 +0100 INFO [JobRunner-job2-1] [derived-member-data] No attachment file for job job2 written.
+2017/06/07 21:34:26.927 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.927 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job3' to run.
+2017/06/07 21:34:26.928 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:26.928 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job4' to run.
+2017/06/07 21:34:26.928 +0100 INFO [JobRunner-job3-1] [derived-member-data] Created file appender for job job3
+2017/06/07 21:34:26.929 +0100 INFO [JobRunner-job3-1] [derived-member-data] Attached file appender for job job3
+2017/06/07 21:34:26.930 +0100 WARN [JobRunner-job3-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.931 +0100 WARN [JobRunner-job3-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.937 +0100 INFO [JobRunner-job4-1] [derived-member-data] Created file appender for job job4
+2017/06/07 21:34:26.937 +0100 INFO [JobRunner-job4-1] [derived-member-data] Attached file appender for job job4
+2017/06/07 21:34:26.961 +0100 WARN [JobRunner-job6-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.961 +0100 WARN [JobRunner-job6-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.964 +0100 WARN [JobRunner-job4-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:26.965 +0100 WARN [JobRunner-job4-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:26.980 +0100 INFO [Test worker] [derived-member-data] Flow killed by me
+2017/06/07 21:34:26.980 +0100 INFO [Test worker] [derived-member-data] Kill has been called on flow 1
+2017/06/07 21:34:26.980 +0100 INFO [Test worker] [derived-member-data] Killing 5 jobs.
+2017/06/07 21:34:26.999 +0100 INFO [JobRunner-job6-1] [derived-member-data] Job job6 finished with status KILLED in 0 seconds
+2017/06/07 21:34:27.000 +0100 INFO [JobRunner-job6-1] [derived-member-data] No attachment file for job job6 written.
+2017/06/07 21:34:27.001 +0100 INFO [JobRunner-job4-1] [derived-member-data] Job job4 finished with status KILLED in 0 seconds
+2017/06/07 21:34:27.002 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Cancelling 'job5' due to prior errors.
+2017/06/07 21:34:27.002 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Cancelling 'job7' due to prior errors.
+2017/06/07 21:34:27.002 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Cancelling 'job8' due to prior errors.
+2017/06/07 21:34:27.002 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Cancelling 'job10' due to prior errors.
+2017/06/07 21:34:27.002 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Flow '' is set to KILLED in 0 seconds
+2017/06/07 21:34:27.002 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Finishing up flow. Awaiting Termination
+2017/06/07 21:34:27.002 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Finished Flow
+2017/06/07 21:34:27.002 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Setting end time for flow 1 to 1496867667002
+2017/06/07 21:34:27.004 +0100 INFO [JobRunner-job4-1] [derived-member-data] No attachment file for job job4 written.
+2017/06/07 21:34:27.005 +0100 INFO [JobRunner-job3-1] [derived-member-data] Job job3 finished with status KILLED in 0 seconds
+2017/06/07 21:34:27.007 +0100 INFO [JobRunner-job3-1] [derived-member-data] No attachment file for job job3 written.
+Teardown temp dir
+Create temp dir
+2017/06/07 21:34:27.061 +0100 INFO [Test worker] [JobTypeManager] Loading plugin default job types
+2017/06/07 21:34:27.071 +0100 INFO [Test worker] [JmxJobMBeanManager] Initializing azkaban.execapp.jmx.JmxJobMBeanManager
+2017/06/07 21:34:27.079 +0100 INFO [Thread-25] [derived-member-data] Running execid:1 flow:derived-member-data project:1 version:2
+2017/06/07 21:34:27.344 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Update active reference
+2017/06/07 21:34:27.345 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Updating initial flow directory.
+2017/06/07 21:34:27.345 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Fetching job and shared properties.
+2017/06/07 21:34:27.345 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Starting flows
+2017/06/07 21:34:27.345 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Running flow 'derived-member-data'.
+2017/06/07 21:34:27.346 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Skipping disabled job 'job1'.
+2017/06/07 21:34:27.346 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:27.346 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job2' to run.
+2017/06/07 21:34:27.347 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Skipping disabled job 'job6'.
+2017/06/07 21:34:27.347 +0100 INFO [JobRunner-job2-1] [derived-member-data] Created file appender for job job2
+2017/06/07 21:34:27.357 +0100 INFO [JobRunner-job2-1] [derived-member-data] Attached file appender for job job2
+2017/06/07 21:34:27.366 +0100 WARN [JobRunner-job2-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:27.366 +0100 WARN [JobRunner-job2-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:27.372 +0100 INFO [JobRunner-job2-1] [derived-member-data] Job job2 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:27.378 +0100 INFO [JobRunner-job2-1] [derived-member-data] No attachment file for job job2 written.
+2017/06/07 21:34:27.382 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:27.382 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job4' to run.
+2017/06/07 21:34:27.387 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:27.387 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job3' to run.
+2017/06/07 21:34:27.387 +0100 INFO [JobRunner-job4-1] [derived-member-data] Created file appender for job job4
+2017/06/07 21:34:27.387 +0100 INFO [JobRunner-job4-1] [derived-member-data] Attached file appender for job job4
+2017/06/07 21:34:27.388 +0100 WARN [JobRunner-job4-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:27.388 +0100 WARN [JobRunner-job4-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:27.389 +0100 INFO [JobRunner-job3-1] [derived-member-data] Created file appender for job job3
+2017/06/07 21:34:27.389 +0100 INFO [JobRunner-job3-1] [derived-member-data] Attached file appender for job job3
+2017/06/07 21:34:27.390 +0100 WARN [JobRunner-job3-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:27.390 +0100 WARN [JobRunner-job3-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:27.399 +0100 INFO [JobRunner-job3-1] [derived-member-data] Job job3 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:27.400 +0100 INFO [JobRunner-job4-1] [derived-member-data] Job job4 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:27.400 +0100 INFO [JobRunner-job3-1] [derived-member-data] No attachment file for job job3 written.
+2017/06/07 21:34:27.401 +0100 INFO [JobRunner-job4-1] [derived-member-data] No attachment file for job job4 written.
+2017/06/07 21:34:27.401 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Skipping disabled job 'job5'.
+2017/06/07 21:34:27.401 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:27.401 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job7' to run.
+2017/06/07 21:34:27.402 +0100 INFO [JobRunner-job7-1] [derived-member-data] Created file appender for job job7
+2017/06/07 21:34:27.402 +0100 INFO [JobRunner-job7-1] [derived-member-data] Attached file appender for job job7
+2017/06/07 21:34:27.403 +0100 WARN [JobRunner-job7-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:27.403 +0100 WARN [JobRunner-job7-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:27.404 +0100 INFO [JobRunner-job7-1] [derived-member-data] Job job7 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:27.405 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Configuring Azkaban metrics tracking for jobrunner object
+2017/06/07 21:34:27.405 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Submitting job 'job8' to run.
+2017/06/07 21:34:27.405 +0100 INFO [JobRunner-job7-1] [derived-member-data] No attachment file for job job7 written.
+2017/06/07 21:34:28.334 +0100 INFO [JobRunner-job8-1] [derived-member-data] Created file appender for job job8
+2017/06/07 21:34:28.334 +0100 INFO [JobRunner-job8-1] [derived-member-data] Attached file appender for job job8
+2017/06/07 21:34:28.336 +0100 WARN [JobRunner-job8-1] [PropsUtils] Null value in props for key 'azkaban.flow.projectlastchangedby'. Replacing with empty string.
+2017/06/07 21:34:28.336 +0100 WARN [JobRunner-job8-1] [PropsUtils] Null value in props for key 'azkaban.flow.submituser'. Replacing with empty string.
+2017/06/07 21:34:28.337 +0100 INFO [JobRunner-job8-1] [derived-member-data] Job job8 finished with status SUCCEEDED in 0 seconds
+2017/06/07 21:34:28.337 +0100 INFO [JobRunner-job8-1] [derived-member-data] No attachment file for job job8 written.
+2017/06/07 21:34:28.339 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Skipping disabled job 'job10'.
+2017/06/07 21:34:28.339 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Flow '' is set to SUCCEEDED in 0 seconds
+2017/06/07 21:34:28.339 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Finishing up flow. Awaiting Termination
+2017/06/07 21:34:28.339 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Finished Flow
+2017/06/07 21:34:28.339 +0100 INFO [FlowRunner-exec-1] [derived-member-data] Setting end time for flow 1 to 1496867668339
+Teardown temp dir
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.5</a> at 07-Jun-2017 21:34:43</p>
+</div>
+</div>
+</body>
+</html>

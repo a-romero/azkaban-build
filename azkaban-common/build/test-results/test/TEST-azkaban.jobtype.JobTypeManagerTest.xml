@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.jobtype.JobTypeManagerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:27" hostname="mars" time="0.254">
+  <properties/>
+  <testcase name="testBuildClass" classname="azkaban.jobtype.JobTypeManagerTest" time="0.078"/>
+  <testcase name="testLoadedClasses" classname="azkaban.jobtype.JobTypeManagerTest" time="0.041"/>
+  <testcase name="testResetPlugins" classname="azkaban.jobtype.JobTypeManagerTest" time="0.074"/>
+  <testcase name="testCommonPluginProps" classname="azkaban.jobtype.JobTypeManagerTest" time="0.031"/>
+  <testcase name="testBuildClass2" classname="azkaban.jobtype.JobTypeManagerTest" time="0.03"/>
+  <system-out><![CDATA[2017/06/07 21:31:27.433 +0100 INFO [JobTypeManager] Loading plugin default job types
+10293 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin default job types
+2017/06/07 21:31:27.435 +0100 INFO [JobTypeManager] Job type plugin directory set. Loading extra job types from /tmp/junit8343308925639566704/jobtypes_test
+10295 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Job type plugin directory set. Loading extra job types from /tmp/junit8343308925639566704/jobtypes_test
+2017/06/07 21:31:27.435 +0100 INFO [JobTypeManager] Common plugin job props file /tmp/junit8343308925639566704/jobtypes_test/common.properties found. Attempt to load.
+10295 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Common plugin job props file /tmp/junit8343308925639566704/jobtypes_test/common.properties found. Attempt to load.
+2017/06/07 21:31:27.436 +0100 INFO [JobTypeManager] Common plugin load props file /tmp/junit8343308925639566704/jobtypes_test/commonprivate.properties found. Attempt to load.
+10296 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Common plugin load props file /tmp/junit8343308925639566704/jobtypes_test/commonprivate.properties found. Attempt to load.
+2017/06/07 21:31:27.436 +0100 INFO [JobTypeManager] Loading plugin anothertestjob
+10296 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin anothertestjob
+2017/06/07 21:31:27.437 +0100 INFO [JobTypeManager] Adding global resources for anothertestjob
+10297 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for anothertestjob
+2017/06/07 21:31:27.437 +0100 INFO [JobTypeManager] Adding type resources.
+10297 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.438 +0100 INFO [JobTypeManager] adding to classpath file:/opt/azkaban/azkaban-common/lib/*
+10298 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/opt/azkaban/azkaban-common/lib/*
+2017/06/07 21:31:27.438 +0100 INFO [JobTypeManager] Adding type override resources.
+10298 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.438 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit8343308925639566704/jobtypes_test/anothertestjob, JobType: anothertestjob]: [file:/opt/azkaban/azkaban-common/lib/*]
+10298 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit8343308925639566704/jobtypes_test/anothertestjob, JobType: anothertestjob]: [file:/opt/azkaban/azkaban-common/lib/*]
+2017/06/07 21:31:27.439 +0100 INFO [JobTypeManager] Verifying job plugin anothertestjob
+10299 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin anothertestjob
+2017/06/07 21:31:27.440 +0100 INFO [JobTypeManager] Loaded jobtype anothertestjob azkaban.jobtype.FakeJavaJob
+10300 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype anothertestjob azkaban.jobtype.FakeJavaJob
+2017/06/07 21:31:27.457 +0100 INFO [JobTypeManager] Loading plugin testjob
+10317 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin testjob
+2017/06/07 21:31:27.458 +0100 INFO [JobTypeManager] Adding global resources for testjob
+10318 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for testjob
+2017/06/07 21:31:27.458 +0100 INFO [JobTypeManager] Adding type resources.
+10318 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.459 +0100 INFO [JobTypeManager] Adding type override resources.
+10319 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.459 +0100 INFO [JobTypeManager] adding to classpath file:/tmp/junit8343308925639566704/jobtypes_test/testjob/fakejobtype.jar
+10319 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/tmp/junit8343308925639566704/jobtypes_test/testjob/fakejobtype.jar
+2017/06/07 21:31:27.459 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit8343308925639566704/jobtypes_test/testjob, JobType: testjob]: [file:/tmp/junit8343308925639566704/jobtypes_test/testjob/fakejobtype.jar]
+10319 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit8343308925639566704/jobtypes_test/testjob, JobType: testjob]: [file:/tmp/junit8343308925639566704/jobtypes_test/testjob/fakejobtype.jar]
+2017/06/07 21:31:27.459 +0100 INFO [JobTypeManager] Verifying job plugin testjob
+10319 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin testjob
+2017/06/07 21:31:27.460 +0100 INFO [JobTypeManager] Loaded jobtype testjob azkaban.jobtype.FakeJavaJob2
+10320 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype testjob azkaban.jobtype.FakeJavaJob2
+2017/06/07 21:31:27.460 +0100 INFO [JobTypeManagerTest] Building anothertestjob job executor. 
+10320 [Test worker] INFO azkaban.jobtype.JobTypeManagerTest  - Building anothertestjob job executor. 
+2017/06/07 21:31:27.501 +0100 INFO [JobTypeManager] Loading plugin default job types
+10361 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin default job types
+2017/06/07 21:31:27.502 +0100 INFO [JobTypeManager] Job type plugin directory set. Loading extra job types from /tmp/junit8603245289170586251/jobtypes_test
+10362 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Job type plugin directory set. Loading extra job types from /tmp/junit8603245289170586251/jobtypes_test
+2017/06/07 21:31:27.502 +0100 INFO [JobTypeManager] Common plugin job props file /tmp/junit8603245289170586251/jobtypes_test/common.properties found. Attempt to load.
+10362 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Common plugin job props file /tmp/junit8603245289170586251/jobtypes_test/common.properties found. Attempt to load.
+2017/06/07 21:31:27.502 +0100 INFO [JobTypeManager] Common plugin load props file /tmp/junit8603245289170586251/jobtypes_test/commonprivate.properties found. Attempt to load.
+10362 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Common plugin load props file /tmp/junit8603245289170586251/jobtypes_test/commonprivate.properties found. Attempt to load.
+2017/06/07 21:31:27.502 +0100 INFO [JobTypeManager] Loading plugin anothertestjob
+10362 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin anothertestjob
+2017/06/07 21:31:27.510 +0100 INFO [JobTypeManager] Adding global resources for anothertestjob
+10370 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for anothertestjob
+2017/06/07 21:31:27.510 +0100 INFO [JobTypeManager] Adding type resources.
+10370 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.515 +0100 INFO [JobTypeManager] adding to classpath file:/opt/azkaban/azkaban-common/lib/*
+10375 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/opt/azkaban/azkaban-common/lib/*
+2017/06/07 21:31:27.515 +0100 INFO [JobTypeManager] Adding type override resources.
+10375 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.516 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit8603245289170586251/jobtypes_test/anothertestjob, JobType: anothertestjob]: [file:/opt/azkaban/azkaban-common/lib/*]
+10376 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit8603245289170586251/jobtypes_test/anothertestjob, JobType: anothertestjob]: [file:/opt/azkaban/azkaban-common/lib/*]
+2017/06/07 21:31:27.516 +0100 INFO [JobTypeManager] Verifying job plugin anothertestjob
+10376 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin anothertestjob
+2017/06/07 21:31:27.516 +0100 INFO [JobTypeManager] Loaded jobtype anothertestjob azkaban.jobtype.FakeJavaJob
+10376 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype anothertestjob azkaban.jobtype.FakeJavaJob
+2017/06/07 21:31:27.516 +0100 INFO [JobTypeManager] Loading plugin testjob
+10376 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin testjob
+2017/06/07 21:31:27.521 +0100 INFO [JobTypeManager] Adding global resources for testjob
+10381 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for testjob
+2017/06/07 21:31:27.521 +0100 INFO [JobTypeManager] Adding type resources.
+10381 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.521 +0100 INFO [JobTypeManager] Adding type override resources.
+10381 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.522 +0100 INFO [JobTypeManager] adding to classpath file:/tmp/junit8603245289170586251/jobtypes_test/testjob/fakejobtype.jar
+10382 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/tmp/junit8603245289170586251/jobtypes_test/testjob/fakejobtype.jar
+2017/06/07 21:31:27.522 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit8603245289170586251/jobtypes_test/testjob, JobType: testjob]: [file:/tmp/junit8603245289170586251/jobtypes_test/testjob/fakejobtype.jar]
+10382 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit8603245289170586251/jobtypes_test/testjob, JobType: testjob]: [file:/tmp/junit8603245289170586251/jobtypes_test/testjob/fakejobtype.jar]
+2017/06/07 21:31:27.522 +0100 INFO [JobTypeManager] Verifying job plugin testjob
+10382 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin testjob
+2017/06/07 21:31:27.522 +0100 INFO [JobTypeManager] Loaded jobtype testjob azkaban.jobtype.FakeJavaJob2
+10382 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype testjob azkaban.jobtype.FakeJavaJob2
+{commonprop3: commonprop3, commonprop2: commonprop2, commonprop1: commonprop1, }
+2017/06/07 21:31:27.531 +0100 INFO [JobTypeManager] Loading plugin default job types
+10391 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin default job types
+2017/06/07 21:31:27.547 +0100 INFO [JobTypeManager] Job type plugin directory set. Loading extra job types from /tmp/junit320821704973784473/jobtypes_test
+10407 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Job type plugin directory set. Loading extra job types from /tmp/junit320821704973784473/jobtypes_test
+2017/06/07 21:31:27.547 +0100 INFO [JobTypeManager] Common plugin job props file /tmp/junit320821704973784473/jobtypes_test/common.properties found. Attempt to load.
+10407 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Common plugin job props file /tmp/junit320821704973784473/jobtypes_test/common.properties found. Attempt to load.
+2017/06/07 21:31:27.548 +0100 INFO [JobTypeManager] Common plugin load props file /tmp/junit320821704973784473/jobtypes_test/commonprivate.properties found. Attempt to load.
+10408 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Common plugin load props file /tmp/junit320821704973784473/jobtypes_test/commonprivate.properties found. Attempt to load.
+2017/06/07 21:31:27.551 +0100 INFO [JobTypeManager] Loading plugin anothertestjob
+10411 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin anothertestjob
+2017/06/07 21:31:27.552 +0100 INFO [JobTypeManager] Adding global resources for anothertestjob
+10412 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for anothertestjob
+2017/06/07 21:31:27.552 +0100 INFO [JobTypeManager] Adding type resources.
+10412 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.552 +0100 INFO [JobTypeManager] adding to classpath file:/opt/azkaban/azkaban-common/lib/*
+10412 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/opt/azkaban/azkaban-common/lib/*
+2017/06/07 21:31:27.552 +0100 INFO [JobTypeManager] Adding type override resources.
+10412 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.553 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit320821704973784473/jobtypes_test/anothertestjob, JobType: anothertestjob]: [file:/opt/azkaban/azkaban-common/lib/*]
+10413 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit320821704973784473/jobtypes_test/anothertestjob, JobType: anothertestjob]: [file:/opt/azkaban/azkaban-common/lib/*]
+2017/06/07 21:31:27.553 +0100 INFO [JobTypeManager] Verifying job plugin anothertestjob
+10413 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin anothertestjob
+2017/06/07 21:31:27.553 +0100 INFO [JobTypeManager] Loaded jobtype anothertestjob azkaban.jobtype.FakeJavaJob
+10413 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype anothertestjob azkaban.jobtype.FakeJavaJob
+2017/06/07 21:31:27.553 +0100 INFO [JobTypeManager] Loading plugin testjob
+10413 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin testjob
+2017/06/07 21:31:27.556 +0100 INFO [JobTypeManager] Adding global resources for testjob
+10416 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for testjob
+2017/06/07 21:31:27.556 +0100 INFO [JobTypeManager] Adding type resources.
+10416 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.556 +0100 INFO [JobTypeManager] Adding type override resources.
+10416 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.556 +0100 INFO [JobTypeManager] adding to classpath file:/tmp/junit320821704973784473/jobtypes_test/testjob/fakejobtype.jar
+10416 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/tmp/junit320821704973784473/jobtypes_test/testjob/fakejobtype.jar
+2017/06/07 21:31:27.557 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit320821704973784473/jobtypes_test/testjob, JobType: testjob]: [file:/tmp/junit320821704973784473/jobtypes_test/testjob/fakejobtype.jar]
+10417 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit320821704973784473/jobtypes_test/testjob, JobType: testjob]: [file:/tmp/junit320821704973784473/jobtypes_test/testjob/fakejobtype.jar]
+2017/06/07 21:31:27.557 +0100 INFO [JobTypeManager] Verifying job plugin testjob
+10417 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin testjob
+2017/06/07 21:31:27.557 +0100 INFO [JobTypeManager] Loaded jobtype testjob azkaban.jobtype.FakeJavaJob2
+10417 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype testjob azkaban.jobtype.FakeJavaJob2
+2017/06/07 21:31:27.562 +0100 INFO [JobTypeManager] Loading plugin default job types
+10422 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin default job types
+2017/06/07 21:31:27.562 +0100 INFO [JobTypeManager] Job type plugin directory set. Loading extra job types from /tmp/junit320821704973784473/jobtypes_test
+10422 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Job type plugin directory set. Loading extra job types from /tmp/junit320821704973784473/jobtypes_test
+2017/06/07 21:31:27.562 +0100 INFO [JobTypeManager] Common plugin job props file /tmp/junit320821704973784473/jobtypes_test/common.properties found. Attempt to load.
+10422 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Common plugin job props file /tmp/junit320821704973784473/jobtypes_test/common.properties found. Attempt to load.
+2017/06/07 21:31:27.562 +0100 INFO [JobTypeManager] Common plugin load props file /tmp/junit320821704973784473/jobtypes_test/commonprivate.properties found. Attempt to load.
+10422 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Common plugin load props file /tmp/junit320821704973784473/jobtypes_test/commonprivate.properties found. Attempt to load.
+2017/06/07 21:31:27.562 +0100 INFO [JobTypeManager] Loading plugin newtestjob
+10422 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin newtestjob
+2017/06/07 21:31:27.575 +0100 INFO [JobTypeManager] Adding global resources for newtestjob
+10435 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for newtestjob
+2017/06/07 21:31:27.576 +0100 INFO [JobTypeManager] Adding type resources.
+10436 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.576 +0100 INFO [JobTypeManager] Adding type override resources.
+10436 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.579 +0100 INFO [JobTypeManager] adding to classpath file:/tmp/junit320821704973784473/jobtypes_test/newtestjob/fakejobtype.jar
+10439 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/tmp/junit320821704973784473/jobtypes_test/newtestjob/fakejobtype.jar
+2017/06/07 21:31:27.580 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit320821704973784473/jobtypes_test/newtestjob, JobType: newtestjob]: [file:/tmp/junit320821704973784473/jobtypes_test/newtestjob/fakejobtype.jar]
+10440 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit320821704973784473/jobtypes_test/newtestjob, JobType: newtestjob]: [file:/tmp/junit320821704973784473/jobtypes_test/newtestjob/fakejobtype.jar]
+2017/06/07 21:31:27.580 +0100 INFO [JobTypeManager] Verifying job plugin newtestjob
+10440 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin newtestjob
+2017/06/07 21:31:27.580 +0100 INFO [JobTypeManager] Loaded jobtype newtestjob azkaban.jobtype.FakeJavaJob2
+10440 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype newtestjob azkaban.jobtype.FakeJavaJob2
+2017/06/07 21:31:27.580 +0100 INFO [JobTypeManager] Loading plugin anothertestjob
+10440 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin anothertestjob
+2017/06/07 21:31:27.581 +0100 INFO [JobTypeManager] Adding global resources for anothertestjob
+10441 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for anothertestjob
+2017/06/07 21:31:27.581 +0100 INFO [JobTypeManager] Adding type resources.
+10441 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.582 +0100 INFO [JobTypeManager] adding to classpath file:/opt/azkaban/azkaban-common/lib/*
+10442 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/opt/azkaban/azkaban-common/lib/*
+2017/06/07 21:31:27.582 +0100 INFO [JobTypeManager] Adding type override resources.
+10442 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.582 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit320821704973784473/jobtypes_test/anothertestjob, JobType: anothertestjob]: [file:/opt/azkaban/azkaban-common/lib/*]
+10442 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit320821704973784473/jobtypes_test/anothertestjob, JobType: anothertestjob]: [file:/opt/azkaban/azkaban-common/lib/*]
+2017/06/07 21:31:27.583 +0100 INFO [JobTypeManager] Verifying job plugin anothertestjob
+10443 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin anothertestjob
+2017/06/07 21:31:27.585 +0100 INFO [JobTypeManager] Loaded jobtype anothertestjob azkaban.jobtype.FakeJavaJob
+10445 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype anothertestjob azkaban.jobtype.FakeJavaJob
+2017/06/07 21:31:27.586 +0100 INFO [JobTypeManager] Loading plugin testjob
+10446 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin testjob
+2017/06/07 21:31:27.586 +0100 INFO [JobTypeManager] Adding global resources for testjob
+10446 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for testjob
+2017/06/07 21:31:27.586 +0100 INFO [JobTypeManager] Adding type resources.
+10446 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.586 +0100 INFO [JobTypeManager] Adding type override resources.
+10446 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.586 +0100 INFO [JobTypeManager] adding to classpath file:/tmp/junit320821704973784473/jobtypes_test/testjob/fakejobtype.jar
+10446 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/tmp/junit320821704973784473/jobtypes_test/testjob/fakejobtype.jar
+2017/06/07 21:31:27.588 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit320821704973784473/jobtypes_test/testjob, JobType: testjob]: [file:/tmp/junit320821704973784473/jobtypes_test/testjob/fakejobtype.jar]
+10448 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit320821704973784473/jobtypes_test/testjob, JobType: testjob]: [file:/tmp/junit320821704973784473/jobtypes_test/testjob/fakejobtype.jar]
+2017/06/07 21:31:27.588 +0100 INFO [JobTypeManager] Verifying job plugin testjob
+10448 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin testjob
+2017/06/07 21:31:27.588 +0100 INFO [JobTypeManager] Loaded jobtype testjob azkaban.jobtype.FakeJavaJob2
+10448 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype testjob azkaban.jobtype.FakeJavaJob2
+2017/06/07 21:31:27.606 +0100 INFO [JobTypeManager] Loading plugin default job types
+10466 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin default job types
+2017/06/07 21:31:27.624 +0100 INFO [JobTypeManager] Job type plugin directory set. Loading extra job types from /tmp/junit1008548889806193049/jobtypes_test
+10484 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Job type plugin directory set. Loading extra job types from /tmp/junit1008548889806193049/jobtypes_test
+2017/06/07 21:31:27.624 +0100 INFO [JobTypeManager] Common plugin job props file /tmp/junit1008548889806193049/jobtypes_test/common.properties found. Attempt to load.
+10484 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Common plugin job props file /tmp/junit1008548889806193049/jobtypes_test/common.properties found. Attempt to load.
+2017/06/07 21:31:27.625 +0100 INFO [JobTypeManager] Common plugin load props file /tmp/junit1008548889806193049/jobtypes_test/commonprivate.properties found. Attempt to load.
+10485 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Common plugin load props file /tmp/junit1008548889806193049/jobtypes_test/commonprivate.properties found. Attempt to load.
+2017/06/07 21:31:27.625 +0100 INFO [JobTypeManager] Loading plugin anothertestjob
+10485 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin anothertestjob
+2017/06/07 21:31:27.625 +0100 INFO [JobTypeManager] Adding global resources for anothertestjob
+10485 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for anothertestjob
+2017/06/07 21:31:27.625 +0100 INFO [JobTypeManager] Adding type resources.
+10485 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.625 +0100 INFO [JobTypeManager] adding to classpath file:/opt/azkaban/azkaban-common/lib/*
+10485 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/opt/azkaban/azkaban-common/lib/*
+2017/06/07 21:31:27.626 +0100 INFO [JobTypeManager] Adding type override resources.
+10486 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.626 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit1008548889806193049/jobtypes_test/anothertestjob, JobType: anothertestjob]: [file:/opt/azkaban/azkaban-common/lib/*]
+10486 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit1008548889806193049/jobtypes_test/anothertestjob, JobType: anothertestjob]: [file:/opt/azkaban/azkaban-common/lib/*]
+2017/06/07 21:31:27.626 +0100 INFO [JobTypeManager] Verifying job plugin anothertestjob
+10486 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin anothertestjob
+2017/06/07 21:31:27.626 +0100 INFO [JobTypeManager] Loaded jobtype anothertestjob azkaban.jobtype.FakeJavaJob
+10486 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype anothertestjob azkaban.jobtype.FakeJavaJob
+2017/06/07 21:31:27.626 +0100 INFO [JobTypeManager] Loading plugin testjob
+10486 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin testjob
+2017/06/07 21:31:27.627 +0100 INFO [JobTypeManager] Adding global resources for testjob
+10487 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for testjob
+2017/06/07 21:31:27.627 +0100 INFO [JobTypeManager] Adding type resources.
+10487 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.627 +0100 INFO [JobTypeManager] Adding type override resources.
+10487 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.627 +0100 INFO [JobTypeManager] adding to classpath file:/tmp/junit1008548889806193049/jobtypes_test/testjob/fakejobtype.jar
+10487 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/tmp/junit1008548889806193049/jobtypes_test/testjob/fakejobtype.jar
+2017/06/07 21:31:27.627 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit1008548889806193049/jobtypes_test/testjob, JobType: testjob]: [file:/tmp/junit1008548889806193049/jobtypes_test/testjob/fakejobtype.jar]
+10487 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit1008548889806193049/jobtypes_test/testjob, JobType: testjob]: [file:/tmp/junit1008548889806193049/jobtypes_test/testjob/fakejobtype.jar]
+2017/06/07 21:31:27.627 +0100 INFO [JobTypeManager] Verifying job plugin testjob
+10487 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin testjob
+2017/06/07 21:31:27.627 +0100 INFO [JobTypeManager] Loaded jobtype testjob azkaban.jobtype.FakeJavaJob2
+10487 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype testjob azkaban.jobtype.FakeJavaJob2
+{commonprop3: commonprop3, commonprop2: commonprop2, commonprop1: commonprop1, }
+2017/06/07 21:31:27.631 +0100 INFO [JobTypeManager] Loading plugin default job types
+10491 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin default job types
+2017/06/07 21:31:27.631 +0100 INFO [JobTypeManager] Job type plugin directory set. Loading extra job types from /tmp/junit388672214088240362/jobtypes_test
+10491 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Job type plugin directory set. Loading extra job types from /tmp/junit388672214088240362/jobtypes_test
+2017/06/07 21:31:27.631 +0100 INFO [JobTypeManager] Common plugin job props file /tmp/junit388672214088240362/jobtypes_test/common.properties found. Attempt to load.
+10491 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Common plugin job props file /tmp/junit388672214088240362/jobtypes_test/common.properties found. Attempt to load.
+2017/06/07 21:31:27.642 +0100 INFO [JobTypeManager] Common plugin load props file /tmp/junit388672214088240362/jobtypes_test/commonprivate.properties found. Attempt to load.
+10502 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Common plugin load props file /tmp/junit388672214088240362/jobtypes_test/commonprivate.properties found. Attempt to load.
+2017/06/07 21:31:27.642 +0100 INFO [JobTypeManager] Loading plugin anothertestjob
+10502 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin anothertestjob
+2017/06/07 21:31:27.642 +0100 INFO [JobTypeManager] Adding global resources for anothertestjob
+10502 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for anothertestjob
+2017/06/07 21:31:27.642 +0100 INFO [JobTypeManager] Adding type resources.
+10502 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.642 +0100 INFO [JobTypeManager] adding to classpath file:/opt/azkaban/azkaban-common/lib/*
+10502 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/opt/azkaban/azkaban-common/lib/*
+2017/06/07 21:31:27.643 +0100 INFO [JobTypeManager] Adding type override resources.
+10503 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.643 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit388672214088240362/jobtypes_test/anothertestjob, JobType: anothertestjob]: [file:/opt/azkaban/azkaban-common/lib/*]
+10503 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit388672214088240362/jobtypes_test/anothertestjob, JobType: anothertestjob]: [file:/opt/azkaban/azkaban-common/lib/*]
+2017/06/07 21:31:27.643 +0100 INFO [JobTypeManager] Verifying job plugin anothertestjob
+10503 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin anothertestjob
+2017/06/07 21:31:27.643 +0100 INFO [JobTypeManager] Loaded jobtype anothertestjob azkaban.jobtype.FakeJavaJob
+10503 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype anothertestjob azkaban.jobtype.FakeJavaJob
+2017/06/07 21:31:27.643 +0100 INFO [JobTypeManager] Loading plugin testjob
+10503 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loading plugin testjob
+2017/06/07 21:31:27.644 +0100 INFO [JobTypeManager] Adding global resources for testjob
+10504 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding global resources for testjob
+2017/06/07 21:31:27.644 +0100 INFO [JobTypeManager] Adding type resources.
+10504 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type resources.
+2017/06/07 21:31:27.644 +0100 INFO [JobTypeManager] Adding type override resources.
+10504 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Adding type override resources.
+2017/06/07 21:31:27.644 +0100 INFO [JobTypeManager] adding to classpath file:/tmp/junit388672214088240362/jobtypes_test/testjob/fakejobtype.jar
+10504 [Test worker] INFO azkaban.jobtype.JobTypeManager  - adding to classpath file:/tmp/junit388672214088240362/jobtypes_test/testjob/fakejobtype.jar
+2017/06/07 21:31:27.644 +0100 INFO [JobTypeManager] Classpath for plugin[dir: /tmp/junit388672214088240362/jobtypes_test/testjob, JobType: testjob]: [file:/tmp/junit388672214088240362/jobtypes_test/testjob/fakejobtype.jar]
+10504 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Classpath for plugin[dir: /tmp/junit388672214088240362/jobtypes_test/testjob, JobType: testjob]: [file:/tmp/junit388672214088240362/jobtypes_test/testjob/fakejobtype.jar]
+2017/06/07 21:31:27.648 +0100 INFO [JobTypeManager] Verifying job plugin testjob
+10508 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Verifying job plugin testjob
+2017/06/07 21:31:27.649 +0100 INFO [JobTypeManager] Loaded jobtype testjob azkaban.jobtype.FakeJavaJob2
+10509 [Test worker] INFO azkaban.jobtype.JobTypeManager  - Loaded jobtype testjob azkaban.jobtype.FakeJavaJob2
+2017/06/07 21:31:27.649 +0100 INFO [JobTypeManagerTest] Building testjob job executor. 
+10509 [Test worker] INFO azkaban.jobtype.JobTypeManagerTest  - Building testjob job executor. 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

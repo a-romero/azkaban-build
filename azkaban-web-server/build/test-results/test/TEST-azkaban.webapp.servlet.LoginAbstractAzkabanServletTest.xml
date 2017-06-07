@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.webapp.servlet.LoginAbstractAzkabanServletTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:35" hostname="mars" time="2.984">
+  <properties/>
+  <testcase name="testWhenPostRequestChangedClientPortSessionIsValid" classname="azkaban.webapp.servlet.LoginAbstractAzkabanServletTest" time="2.765"/>
+  <testcase name="testWhenPostRequestSessionIsValid" classname="azkaban.webapp.servlet.LoginAbstractAzkabanServletTest" time="0.009"/>
+  <testcase name="testWhenPostRequestChangedClientIpSessionIsInvalid" classname="azkaban.webapp.servlet.LoginAbstractAzkabanServletTest" time="0.174"/>
+  <testcase name="testWhenGetRequestSessionIsValid" classname="azkaban.webapp.servlet.LoginAbstractAzkabanServletTest" time="0.009"/>
+  <testcase name="testWhenPostRequestWithMultipleUpstreamsSessionIsValid" classname="azkaban.webapp.servlet.LoginAbstractAzkabanServletTest" time="0.004"/>
+  <testcase name="testWhenPostRequestWithUpstreamSessionIsValid" classname="azkaban.webapp.servlet.LoginAbstractAzkabanServletTest" time="0.02"/>
+  <system-out><![CDATA[2017/06/07 21:31:38.047 +0100 INFO [LoginAbstractAzkabanServlet] 127.0.0.1 user "POST null - null" not-browser
+2017/06/07 21:31:38.098 +0100 INFO [LoginAbstractAzkabanServlet] 127.0.0.1 user "POST null - null" not-browser
+2017/06/07 21:31:38.119 +0100 INFO [LoginAbstractAzkabanServlet] 127.0.0.2  -  "POST null - null" not-browser
+2017/06/07 21:31:38.286 +0100 INFO [LoginAbstractAzkabanServlet] 127.0.0.1 user "GET null - null" not-browser
+2017/06/07 21:31:38.291 +0100 INFO [LoginAbstractAzkabanServlet] 192.168.1.1 user "POST null - null" not-browser
+2017/06/07 21:31:38.311 +0100 INFO [LoginAbstractAzkabanServlet] 192.168.1.1 user "POST null - null" not-browser
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

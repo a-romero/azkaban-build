@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.jobcallback.JobCallbackValidatorTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:23" hostname="mars" time="0.016">
+  <properties/>
+  <testcase name="noJobCallbackProps" classname="azkaban.jobcallback.JobCallbackValidatorTest" time="0.004"/>
+  <testcase name="multipleGetJobCallbackWithGap" classname="azkaban.jobcallback.JobCallbackValidatorTest" time="0.002"/>
+  <testcase name="sequenceStartWithZeroProps" classname="azkaban.jobcallback.JobCallbackValidatorTest" time="0.001"/>
+  <testcase name="multiplePostJobCallbacks" classname="azkaban.jobcallback.JobCallbackValidatorTest" time="0.0"/>
+  <testcase name="postBodyLengthTooLargeTest" classname="azkaban.jobcallback.JobCallbackValidatorTest" time="0.0"/>
+  <testcase name="onePostJobCallback" classname="azkaban.jobcallback.JobCallbackValidatorTest" time="0.0"/>
+  <testcase name="oneGetJobCallback" classname="azkaban.jobcallback.JobCallbackValidatorTest" time="0.001"/>
+  <testcase name="multipleGetJobCallbacks" classname="azkaban.jobcallback.JobCallbackValidatorTest" time="0.0"/>
+  <testcase name="noPostBodyJobCallback" classname="azkaban.jobcallback.JobCallbackValidatorTest" time="0.001"/>
+  <system-out><![CDATA[[POST body length is : 26 which is larger than supported length of 20]
+[No POST body was specified for job callback 'http://www.linkedin.com']
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

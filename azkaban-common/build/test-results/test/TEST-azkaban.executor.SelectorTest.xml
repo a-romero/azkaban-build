@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.executor.SelectorTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:21" hostname="mars" time="0.191">
+  <properties/>
+  <testcase name="testCreatingExectorfilterObjectWInvalidList" classname="azkaban.executor.SelectorTest" time="0.006"/>
+  <testcase name="testExecutorSelectorE2E" classname="azkaban.executor.SelectorTest" time="0.021"/>
+  <testcase name="testCreatingExectorComparatorObjectWInvalidWeight" classname="azkaban.executor.SelectorTest" time="0.0"/>
+  <testcase name="testCreatingExectorComparatorObject" classname="azkaban.executor.SelectorTest" time="0.002"/>
+  <testcase name="testCreatingExecutorSelectorWithEmptyFilterComparatorList" classname="azkaban.executor.SelectorTest" time="0.0"/>
+  <testcase name="testSelectorEmptyList" classname="azkaban.executor.SelectorTest" time="0.012"/>
+  <testcase name="testExecutorFilterWithNullInputs" classname="azkaban.executor.SelectorTest" time="0.0"/>
+  <testcase name="testSelectorListWithItemsThatAreReferenceEqual" classname="azkaban.executor.SelectorTest" time="0.001"/>
+  <testcase name="testExecutorComparer" classname="azkaban.executor.SelectorTest" time="0.013"/>
+  <testcase name="testSelectorListWithItemsThatAreEqualInValue" classname="azkaban.executor.SelectorTest" time="0.001"/>
+  <testcase name="testExecutorFilter" classname="azkaban.executor.SelectorTest" time="0.018"/>
+  <testcase name="testExecutorInfoJsonParser" classname="azkaban.executor.SelectorTest" time="0.086"/>
+  <testcase name="testSelectorsignleCandidate" classname="azkaban.executor.SelectorTest" time="0.001"/>
+  <testcase name="testCreatingExectorfilterObject" classname="azkaban.executor.SelectorTest" time="0.001"/>
+  <testcase name="testSelectorListWithNullValue" classname="azkaban.executor.SelectorTest" time="0.001"/>
+  <testcase name="testCreatingExectorComparatorObjectWInvalidName" classname="azkaban.executor.SelectorTest" time="0.001"/>
+  <testcase name="testExecutorComparerResisterComparerWInvalidWeight" classname="azkaban.executor.SelectorTest" time="0.001"/>
+  <testcase name="testSelector" classname="azkaban.executor.SelectorTest" time="0.003"/>
+  <system-out><![CDATA[2017/06/07 21:31:21.878 +0100 ERROR [CandidateFilter] failed to initialize executor filter as the filter implementation for requested factor 'notExistingFilter' doesn't exist.
+4738 [Test worker] ERROR azkaban.executor.selector.CandidateFilter  - failed to initialize executor filter as the filter implementation for requested factor 'notExistingFilter' doesn't exist.
+2017/06/07 21:31:21.901 +0100 ERROR [CandidateComparator] failed to create instance of FactorComparator, at least one of the input paramters are invalid
+4761 [Test worker] ERROR azkaban.executor.selector.CandidateComparator  - failed to create instance of FactorComparator, at least one of the input paramters are invalid
+2017/06/07 21:31:21.914 +0100 ERROR [CandidateComparator] failed to getNext candidate as the passed candidateList is null or empty.
+4774 [Test worker] ERROR azkaban.executor.selector.CandidateComparator  - failed to getNext candidate as the passed candidateList is null or empty.
+2017/06/07 21:31:21.915 +0100 ERROR [CandidateComparator] failed to getNext candidate as the passed candidateList is null or empty.
+4775 [Test worker] ERROR azkaban.executor.selector.CandidateComparator  - failed to getNext candidate as the passed candidateList is null or empty.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

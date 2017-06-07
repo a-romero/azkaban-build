@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.trigger.TriggerManagerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-06-07T20:31:48" hostname="mars" time="5.94">
+  <properties/>
+  <testcase name="neverExpireTriggerTest" classname="azkaban.trigger.TriggerManagerTest" time="0.932"/>
+  <testcase name="timeCheckerAndExpireTriggerTest" classname="azkaban.trigger.TriggerManagerTest" time="5.008"/>
+  <system-out><![CDATA[2017/06/07 21:31:48.366 +0100 INFO [TriggerManager] TriggerManager loaded.
+31226 [Test worker] INFO azkaban.trigger.TriggerManager  - TriggerManager loaded.
+2017/06/07 21:31:48.366 +0100 INFO [CheckerTypeLoader] Registering checker ThresholdChecker
+31226 [Test worker] INFO azkaban.trigger.CheckerTypeLoader  - Registering checker ThresholdChecker
+2017/06/07 21:31:48.367 +0100 INFO [ActionTypeLoader] Registering action DummyAction
+31227 [Test worker] INFO azkaban.trigger.ActionTypeLoader  - Registering action DummyAction
+2017/06/07 21:31:48.378 +0100 INFO [TriggerManager] Inserting trigger Trigger Id: -1, Description: Trigger from triggerLoader with trigger condition of ThresholdChecker.eval() and expire condition of EndTimeCheck_1.eval(), this is real dummy action in TriggerManager
+31238 [Test worker] INFO azkaban.trigger.TriggerManager  - Inserting trigger Trigger Id: -1, Description: Trigger from triggerLoader with trigger condition of ThresholdChecker.eval() and expire condition of EndTimeCheck_1.eval(), this is real dummy action in TriggerManager
+2017/06/07 21:31:48.387 +0100 INFO [TriggerManager] Doing trigger actions this is real dummy action for Trigger Id: 0, Description: Trigger from triggerLoader with trigger condition of ThresholdChecker.eval() and expire condition of EndTimeCheck_1.eval(), this is real dummy action
+31247 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.TriggerManager  - Doing trigger actions this is real dummy action for Trigger Id: 0, Description: Trigger from triggerLoader with trigger condition of ThresholdChecker.eval() and expire condition of EndTimeCheck_1.eval(), this is real dummy action
+DummyAction invoked.
+
+2017/06/07 21:31:49.278 +0100 ERROR [TriggerManager] Shutting down trigger manager thread TriggerRunnerManager-Trigger-Scanner-Thread
+32138 [Test worker] ERROR azkaban.trigger.TriggerManager  - Shutting down trigger manager thread TriggerRunnerManager-Trigger-Scanner-Thread
+2017/06/07 21:31:49.279 +0100 INFO [TriggerManager] TriggerManager loaded.
+32139 [Test worker] INFO azkaban.trigger.TriggerManager  - TriggerManager loaded.
+2017/06/07 21:31:49.279 +0100 INFO [CheckerTypeLoader] Registering checker ThresholdChecker
+32139 [Test worker] INFO azkaban.trigger.CheckerTypeLoader  - Registering checker ThresholdChecker
+2017/06/07 21:31:49.279 +0100 INFO [ActionTypeLoader] Registering action DummyAction
+32139 [Test worker] INFO azkaban.trigger.ActionTypeLoader  - Registering action DummyAction
+2017/06/07 21:31:49.279 +0100 INFO [TriggerManager] Interrupted. Probably to shut down.
+32139 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.TriggerManager  - Interrupted. Probably to shut down.
+2017/06/07 21:31:49.286 +0100 INFO [TriggerManager] Inserting trigger Trigger Id: -1, Description: Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action in TriggerManager
+32146 [Test worker] INFO azkaban.trigger.TriggerManager  - Inserting trigger Trigger Id: -1, Description: Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action in TriggerManager
+2017/06/07 21:31:50.490 +0100 INFO [TriggerManager] Doing trigger actions this is real dummy action for Trigger Id: 1, Description: Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action
+33350 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.TriggerManager  - Doing trigger actions this is real dummy action for Trigger Id: 1, Description: Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action
+DummyAction invoked.
+
+2017/06/07 21:31:50.490 +0100 INFO [Condition] Done resetting checkers. The next check time will be 2017-06-07T21:31:51.285+01:00
+33350 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.Condition  - Done resetting checkers. The next check time will be 2017-06-07T21:31:51.285+01:00
+2017/06/07 21:31:51.391 +0100 INFO [TriggerManager] Doing trigger actions this is real dummy action for Trigger Id: 1, Description: Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action
+34251 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.TriggerManager  - Doing trigger actions this is real dummy action for Trigger Id: 1, Description: Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action
+DummyAction invoked.
+
+2017/06/07 21:31:51.391 +0100 INFO [Condition] Done resetting checkers. The next check time will be 2017-06-07T21:31:52.285+01:00
+34251 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.Condition  - Done resetting checkers. The next check time will be 2017-06-07T21:31:52.285+01:00
+2017/06/07 21:31:52.292 +0100 INFO [TriggerManager] Pausing Trigger Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action
+35152 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.TriggerManager  - Pausing Trigger Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action
+2017/06/07 21:31:54.287 +0100 ERROR [TriggerManager] Shutting down trigger manager thread TriggerRunnerManager-Trigger-Scanner-Thread
+37147 [Test worker] ERROR azkaban.trigger.TriggerManager  - Shutting down trigger manager thread TriggerRunnerManager-Trigger-Scanner-Thread
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

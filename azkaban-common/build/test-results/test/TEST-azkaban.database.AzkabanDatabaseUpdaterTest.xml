@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.database.AzkabanDatabaseUpdaterTest" tests="2" skipped="1" failures="0" errors="0" timestamp="2017-06-07T20:31:17" hostname="mars" time="0.11">
+  <properties/>
+  <testcase name="testH2AutoCreate" classname="azkaban.database.AzkabanDatabaseUpdaterTest" time="0.104"/>
+  <testcase name="testMySQLAutoCreate" classname="azkaban.database.AzkabanDatabaseUpdaterTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[1.***Now testing check
+2017/06/07 21:31:17.140 +0100 INFO [AzkabanServer] Loading azkaban settings file from /opt/azkaban/azkaban-common/build/resources/test/conf
+2017/06/07 21:31:17.148 +0100 ERROR [AzkabanDatabaseUpdater] Properties not found. Need it to connect to the db.
+2017/06/07 21:31:17.151 +0100 ERROR [AzkabanDatabaseUpdater] Exiting...
+2.***Now testing update
+2017/06/07 21:31:17.152 +0100 INFO [AzkabanServer] Loading azkaban settings file from /opt/azkaban/azkaban-common/build/resources/test/conf
+2017/06/07 21:31:17.160 +0100 ERROR [AzkabanDatabaseUpdater] Properties not found. Need it to connect to the db.
+2017/06/07 21:31:17.160 +0100 ERROR [AzkabanDatabaseUpdater] Exiting...
+3.***Now testing check again
+2017/06/07 21:31:17.163 +0100 INFO [AzkabanServer] Loading azkaban settings file from /opt/azkaban/azkaban-common/build/resources/test/conf
+2017/06/07 21:31:17.164 +0100 ERROR [AzkabanDatabaseUpdater] Properties not found. Need it to connect to the db.
+2017/06/07 21:31:17.164 +0100 ERROR [AzkabanDatabaseUpdater] Exiting...
+4.***Now testing update again
+2017/06/07 21:31:17.166 +0100 INFO [AzkabanServer] Loading azkaban settings file from /opt/azkaban/azkaban-common/build/resources/test/conf
+2017/06/07 21:31:17.168 +0100 ERROR [AzkabanDatabaseUpdater] Properties not found. Need it to connect to the db.
+2017/06/07 21:31:17.171 +0100 ERROR [AzkabanDatabaseUpdater] Exiting...
+5.***Now testing check again
+2017/06/07 21:31:17.173 +0100 INFO [AzkabanServer] Loading azkaban settings file from /opt/azkaban/azkaban-common/build/resources/test/conf
+2017/06/07 21:31:17.175 +0100 ERROR [AzkabanDatabaseUpdater] Properties not found. Need it to connect to the db.
+2017/06/07 21:31:17.176 +0100 ERROR [AzkabanDatabaseUpdater] Exiting...
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

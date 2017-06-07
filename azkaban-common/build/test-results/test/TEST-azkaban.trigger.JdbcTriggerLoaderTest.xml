@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.trigger.JdbcTriggerLoaderTest" tests="3" skipped="3" failures="0" errors="0" timestamp="2017-06-07T20:31:54" hostname="mars" time="0.001">
+  <properties/>
+  <testcase name="updateTriggerTest" classname="azkaban.trigger.JdbcTriggerLoaderTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="addTriggerTest" classname="azkaban.trigger.JdbcTriggerLoaderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="removeTriggerTest" classname="azkaban.trigger.JdbcTriggerLoaderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[2017/06/07 21:31:54.288 +0100 INFO [TriggerManager] Interrupted. Probably to shut down.
+37148 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.TriggerManager  - Interrupted. Probably to shut down.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

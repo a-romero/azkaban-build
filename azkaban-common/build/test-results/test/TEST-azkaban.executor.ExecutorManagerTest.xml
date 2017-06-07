@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="azkaban.executor.ExecutorManagerTest" tests="15" skipped="3" failures="0" errors="0" timestamp="2017-06-07T20:31:19" hostname="mars" time="1.138">
+  <properties/>
+  <testcase name="testFetchAllActiveExecutorServerHosts" classname="azkaban.executor.ExecutorManagerTest" time="0.913"/>
+  <testcase name="testFetchActiveFlowWithExecutor" classname="azkaban.executor.ExecutorManagerTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testDisablingQueueProcessThread" classname="azkaban.executor.ExecutorManagerTest" time="0.02"/>
+  <testcase name="testFetchActiveFlowByProject" classname="azkaban.executor.ExecutorManagerTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testQueuedFlows" classname="azkaban.executor.ExecutorManagerTest" time="0.072"/>
+  <testcase name="testFetchAllActiveFlows" classname="azkaban.executor.ExecutorManagerTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testSubmitFlows" classname="azkaban.executor.ExecutorManagerTest" time="0.044"/>
+  <testcase name="testLocalExecutorScenario" classname="azkaban.executor.ExecutorManagerTest" time="0.01"/>
+  <testcase name="testEnablingQueueProcessThread" classname="azkaban.executor.ExecutorManagerTest" time="0.015"/>
+  <testcase name="testKillQueuedFlow" classname="azkaban.executor.ExecutorManagerTest" time="0.012"/>
+  <testcase name="testSetupExecutorsException" classname="azkaban.executor.ExecutorManagerTest" time="0.02"/>
+  <testcase name="testNoExecutorScenario" classname="azkaban.executor.ExecutorManagerTest" time="0.0"/>
+  <testcase name="testSetupExecutorsSucess" classname="azkaban.executor.ExecutorManagerTest" time="0.007"/>
+  <testcase name="testDuplicateQueuedFlows" classname="azkaban.executor.ExecutorManagerTest" time="0.003"/>
+  <testcase name="testMultipleExecutorScenario" classname="azkaban.executor.ExecutorManagerTest" time="0.009"/>
+  <system-out><![CDATA[2017/06/07 21:31:20.283 +0100 ERROR [AlerterHolder] azkaban.utils.UndefinedPropertyException: Missing required property 'server.port'
+2017/06/07 21:31:20.284 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.367 +0100 INFO [ExecutorManager] QueueProcessorThread active turned true
+2017/06/07 21:31:20.373 +0100 INFO [ExecutorManager] Cleaning old logs from execution_logs
+2017/06/07 21:31:20.389 +0100 ERROR [AlerterHolder] azkaban.utils.UndefinedPropertyException: Missing required property 'server.port'
+2017/06/07 21:31:20.397 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.399 +0100 INFO [ExecutorManager] QueueProcessorThread active turned false
+2017/06/07 21:31:20.403 +0100 INFO [ExecutorManager] QueueProcessorThread active turned true
+2017/06/07 21:31:20.403 +0100 INFO [ExecutorManager] QueueProcessorThread active turned false
+2017/06/07 21:31:20.404 +0100 ERROR [AlerterHolder] azkaban.utils.UndefinedPropertyException: Missing required property 'server.port'
+2017/06/07 21:31:20.404 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.406 +0100 INFO [ExecutorManager] QueueProcessorThread active turned false
+2017/06/07 21:31:20.411 +0100 INFO [ExecutorManager] Submitting execution flow derived-member-data by testUser
+2017/06/07 21:31:20.422 +0100 INFO [ExecutorManager] Cleaning old logs from execution_logs
+2017/06/07 21:31:20.423 +0100 INFO [ExecutorManager] Cleaning old logs from execution_logs
+2017/06/07 21:31:20.438 +0100 INFO [ExecutorManager] Cleaning old log files before 2017-03-15T20:31:20.374Z
+2017/06/07 21:31:20.438 +0100 INFO [ExecutorManager] Cleaning old log files before 2017-03-15T20:31:20.423Z
+2017/06/07 21:31:20.439 +0100 INFO [ExecutorManager] Cleaning old log files before 2017-03-15T20:31:20.423Z
+2017/06/07 21:31:20.440 +0100 INFO [ExecutorManager] Cleaned up 0 log entries.
+2017/06/07 21:31:20.440 +0100 INFO [ExecutorManager] log clean up time: 0 seconds.
+2017/06/07 21:31:20.440 +0100 INFO [ExecutorManager] Cleaned up 0 log entries.
+2017/06/07 21:31:20.443 +0100 INFO [ExecutorManager] log clean up time: 0 seconds.
+2017/06/07 21:31:20.447 +0100 INFO [ExecutorManager] Cleaned up 0 log entries.
+2017/06/07 21:31:20.447 +0100 INFO [ExecutorManager] log clean up time: 0 seconds.
+2017/06/07 21:31:20.472 +0100 INFO [ExecutorManager] Submitting execution flow derived-member-data-2 by testUser
+2017/06/07 21:31:20.478 +0100 ERROR [AlerterHolder] azkaban.utils.UndefinedPropertyException: Missing required property 'server.port'
+2017/06/07 21:31:20.479 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.481 +0100 INFO [ExecutorManager] QueueProcessorThread active turned true
+2017/06/07 21:31:20.487 +0100 INFO [ExecutorManager] Cleaning old logs from execution_logs
+2017/06/07 21:31:20.488 +0100 INFO [ExecutorManager] Cleaning old log files before 2017-03-15T20:31:20.488Z
+2017/06/07 21:31:20.493 +0100 INFO [ExecutorManager] Submitting execution flow derived-member-data by testUser
+2017/06/07 21:31:20.497 +0100 INFO [ExecutorManager] Cleaned up 0 log entries.
+2017/06/07 21:31:20.498 +0100 INFO [ExecutorManager] log clean up time: 0 seconds.
+2017/06/07 21:31:20.522 +0100 ERROR [AlerterHolder] azkaban.utils.UndefinedPropertyException: Missing required property 'server.port'
+2017/06/07 21:31:20.523 +0100 INFO [ExecutorManager] Initializing local executor localhost:12345
+2017/06/07 21:31:20.531 +0100 INFO [ExecutorManager] Cleaning old logs from execution_logs
+2017/06/07 21:31:20.533 +0100 ERROR [AlerterHolder] azkaban.utils.UndefinedPropertyException: Missing required property 'server.port'
+2017/06/07 21:31:20.539 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.540 +0100 INFO [ExecutorManager] Cleaning old log files before 2017-03-15T20:31:20.539Z
+2017/06/07 21:31:20.540 +0100 INFO [ExecutorManager] Cleaned up 0 log entries.
+2017/06/07 21:31:20.540 +0100 INFO [ExecutorManager] QueueProcessorThread active turned false
+2017/06/07 21:31:20.542 +0100 INFO [ExecutorManager] log clean up time: 0 seconds.
+2017/06/07 21:31:20.547 +0100 INFO [ExecutorManager] QueueProcessorThread active turned true
+2017/06/07 21:31:20.548 +0100 INFO [ExecutorManager] Cleaning old logs from execution_logs
+2017/06/07 21:31:20.548 +0100 ERROR [AlerterHolder] azkaban.utils.UndefinedPropertyException: Missing required property 'server.port'
+2017/06/07 21:31:20.548 +0100 INFO [ExecutorManager] Cleaning old log files before 2017-03-15T20:31:20.548Z
+2017/06/07 21:31:20.548 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.549 +0100 INFO [ExecutorManager] Cleaned up 0 log entries.
+2017/06/07 21:31:20.549 +0100 INFO [ExecutorManager] log clean up time: 0 seconds.
+2017/06/07 21:31:20.550 +0100 INFO [ExecutorManager] QueueProcessorThread active turned false
+2017/06/07 21:31:20.552 +0100 INFO [ExecutorManager] Submitting execution flow derived-member-data by testUser
+2017/06/07 21:31:20.561 +0100 ERROR [AlerterHolder] azkaban.utils.UndefinedPropertyException: Missing required property 'server.port'
+2017/06/07 21:31:20.561 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.569 +0100 INFO [ExecutorManager] QueueProcessorThread active turned true
+2017/06/07 21:31:20.569 +0100 INFO [ExecutorManager] Cleaning old logs from execution_logs
+2017/06/07 21:31:20.570 +0100 INFO [ExecutorManager] Cleaning old log files before 2017-03-15T20:31:20.570Z
+2017/06/07 21:31:20.570 +0100 INFO [ExecutorManager] Cleaned up 0 log entries.
+2017/06/07 21:31:20.570 +0100 INFO [ExecutorManager] log clean up time: 0 seconds.
+2017/06/07 21:31:20.573 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.574 +0100 ERROR [ExecutorManager] No active executor found
+2017/06/07 21:31:20.581 +0100 ERROR [AlerterHolder] azkaban.utils.UndefinedPropertyException: Missing required property 'server.port'
+2017/06/07 21:31:20.581 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.581 +0100 ERROR [ExecutorManager] No active executor found
+2017/06/07 21:31:20.582 +0100 ERROR [AlerterHolder] azkaban.utils.UndefinedPropertyException: Missing required property 'server.port'
+2017/06/07 21:31:20.582 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.588 +0100 INFO [ExecutorManager] QueueProcessorThread active turned true
+2017/06/07 21:31:20.589 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.590 +0100 ERROR [AlerterHolder] azkaban.utils.UndefinedPropertyException: Missing required property 'server.port'
+2017/06/07 21:31:20.590 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.590 +0100 INFO [ExecutorManager] QueueProcessorThread active turned false
+2017/06/07 21:31:20.592 +0100 INFO [ExecutorManager] Submitting execution flow derived-member-data by testUser
+2017/06/07 21:31:20.593 +0100 INFO [ExecutorManager] Submitting execution flow derived-member-data by testUser
+2017/06/07 21:31:20.594 +0100 ERROR [AlerterHolder] azkaban.utils.UndefinedPropertyException: Missing required property 'server.port'
+2017/06/07 21:31:20.594 +0100 INFO [ExecutorManager] Initializing multi executors from database
+2017/06/07 21:31:20.595 +0100 INFO [ExecutorManager] QueueProcessorThread active turned true
+2017/06/07 21:31:20.599 +0100 INFO [ExecutorManager] Cleaning old logs from execution_logs
+2017/06/07 21:31:20.600 +0100 INFO [ExecutorManager] Cleaning old log files before 2017-03-15T20:31:20.599Z
+2017/06/07 21:31:20.600 +0100 INFO [ExecutorManager] Cleaned up 0 log entries.
+2017/06/07 21:31:20.600 +0100 INFO [ExecutorManager] log clean up time: 0 seconds.
+2017/06/07 21:31:20.600 +0100 INFO [ExecutorManager] Cleaning old logs from execution_logs
+2017/06/07 21:31:20.600 +0100 INFO [ExecutorManager] Cleaning old log files before 2017-03-15T20:31:20.600Z
+2017/06/07 21:31:20.601 +0100 INFO [ExecutorManager] Cleaned up 0 log entries.
+2017/06/07 21:31:20.601 +0100 INFO [ExecutorManager] log clean up time: 0 seconds.
+2017/06/07 21:31:20.601 +0100 INFO [ExecutorManager] Cleaning old logs from execution_logs
+2017/06/07 21:31:20.601 +0100 INFO [ExecutorManager] Cleaning old log files before 2017-03-15T20:31:20.601Z
+2017/06/07 21:31:20.601 +0100 INFO [ExecutorManager] Cleaned up 0 log entries.
+2017/06/07 21:31:20.601 +0100 INFO [ExecutorManager] log clean up time: 0 seconds.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

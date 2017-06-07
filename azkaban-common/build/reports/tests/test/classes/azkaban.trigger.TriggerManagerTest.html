@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class azkaban.trigger.TriggerManagerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class azkaban.trigger.TriggerManagerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/azkaban.trigger.html">azkaban.trigger</a> &gt; TriggerManagerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5.940s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">neverExpireTriggerTest</td>
+<td>0.932s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">timeCheckerAndExpireTriggerTest</td>
+<td>5.008s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2017/06/07 21:31:48.366 +0100 INFO [TriggerManager] TriggerManager loaded.
+31226 [Test worker] INFO azkaban.trigger.TriggerManager  - TriggerManager loaded.
+2017/06/07 21:31:48.366 +0100 INFO [CheckerTypeLoader] Registering checker ThresholdChecker
+31226 [Test worker] INFO azkaban.trigger.CheckerTypeLoader  - Registering checker ThresholdChecker
+2017/06/07 21:31:48.367 +0100 INFO [ActionTypeLoader] Registering action DummyAction
+31227 [Test worker] INFO azkaban.trigger.ActionTypeLoader  - Registering action DummyAction
+2017/06/07 21:31:48.378 +0100 INFO [TriggerManager] Inserting trigger Trigger Id: -1, Description: Trigger from triggerLoader with trigger condition of ThresholdChecker.eval() and expire condition of EndTimeCheck_1.eval(), this is real dummy action in TriggerManager
+31238 [Test worker] INFO azkaban.trigger.TriggerManager  - Inserting trigger Trigger Id: -1, Description: Trigger from triggerLoader with trigger condition of ThresholdChecker.eval() and expire condition of EndTimeCheck_1.eval(), this is real dummy action in TriggerManager
+2017/06/07 21:31:48.387 +0100 INFO [TriggerManager] Doing trigger actions this is real dummy action for Trigger Id: 0, Description: Trigger from triggerLoader with trigger condition of ThresholdChecker.eval() and expire condition of EndTimeCheck_1.eval(), this is real dummy action
+31247 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.TriggerManager  - Doing trigger actions this is real dummy action for Trigger Id: 0, Description: Trigger from triggerLoader with trigger condition of ThresholdChecker.eval() and expire condition of EndTimeCheck_1.eval(), this is real dummy action
+DummyAction invoked.
+
+2017/06/07 21:31:49.278 +0100 ERROR [TriggerManager] Shutting down trigger manager thread TriggerRunnerManager-Trigger-Scanner-Thread
+32138 [Test worker] ERROR azkaban.trigger.TriggerManager  - Shutting down trigger manager thread TriggerRunnerManager-Trigger-Scanner-Thread
+2017/06/07 21:31:49.279 +0100 INFO [TriggerManager] TriggerManager loaded.
+32139 [Test worker] INFO azkaban.trigger.TriggerManager  - TriggerManager loaded.
+2017/06/07 21:31:49.279 +0100 INFO [CheckerTypeLoader] Registering checker ThresholdChecker
+32139 [Test worker] INFO azkaban.trigger.CheckerTypeLoader  - Registering checker ThresholdChecker
+2017/06/07 21:31:49.279 +0100 INFO [ActionTypeLoader] Registering action DummyAction
+32139 [Test worker] INFO azkaban.trigger.ActionTypeLoader  - Registering action DummyAction
+2017/06/07 21:31:49.279 +0100 INFO [TriggerManager] Interrupted. Probably to shut down.
+32139 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.TriggerManager  - Interrupted. Probably to shut down.
+2017/06/07 21:31:49.286 +0100 INFO [TriggerManager] Inserting trigger Trigger Id: -1, Description: Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action in TriggerManager
+32146 [Test worker] INFO azkaban.trigger.TriggerManager  - Inserting trigger Trigger Id: -1, Description: Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action in TriggerManager
+2017/06/07 21:31:50.490 +0100 INFO [TriggerManager] Doing trigger actions this is real dummy action for Trigger Id: 1, Description: Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action
+33350 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.TriggerManager  - Doing trigger actions this is real dummy action for Trigger Id: 1, Description: Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action
+DummyAction invoked.
+
+2017/06/07 21:31:50.490 +0100 INFO [Condition] Done resetting checkers. The next check time will be 2017-06-07T21:31:51.285+01:00
+33350 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.Condition  - Done resetting checkers. The next check time will be 2017-06-07T21:31:51.285+01:00
+2017/06/07 21:31:51.391 +0100 INFO [TriggerManager] Doing trigger actions this is real dummy action for Trigger Id: 1, Description: Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action
+34251 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.TriggerManager  - Doing trigger actions this is real dummy action for Trigger Id: 1, Description: Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action
+DummyAction invoked.
+
+2017/06/07 21:31:51.391 +0100 INFO [Condition] Done resetting checkers. The next check time will be 2017-06-07T21:31:52.285+01:00
+34251 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.Condition  - Done resetting checkers. The next check time will be 2017-06-07T21:31:52.285+01:00
+2017/06/07 21:31:52.292 +0100 INFO [TriggerManager] Pausing Trigger Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action
+35152 [TriggerRunnerManager-Trigger-Scanner-Thread] INFO azkaban.trigger.TriggerManager  - Pausing Trigger Trigger from  with trigger condition of BasicTimeChecker_1.eval() and expire condition of EndTimeChecker_1.eval(), this is real dummy action
+2017/06/07 21:31:54.287 +0100 ERROR [TriggerManager] Shutting down trigger manager thread TriggerRunnerManager-Trigger-Scanner-Thread
+37147 [Test worker] ERROR azkaban.trigger.TriggerManager  - Shutting down trigger manager thread TriggerRunnerManager-Trigger-Scanner-Thread
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.5</a> at 07-Jun-2017 21:31:56</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+-x
+c
+-c
+-I
+/opt/azkaban/azkaban-common/src/main/headers
+-m64
